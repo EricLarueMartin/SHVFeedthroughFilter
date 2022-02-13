@@ -79,139 +79,116 @@
 SHV coaxial feedthrough RCR filter
 \end_layout
 
-\begin_layout Standard
+\begin_layout Author
+Eric L.
+ Martin
+\end_layout
+
+\begin_layout Address
+Department of Physics and Astronomy, University of North Carolina, Chapel
+ Hill, NC 27514, USA
+\begin_inset Newline newline
+\end_inset
+
+Triangle Universities Nuclear Laboratory, Durham, NC 27708, USA
+\end_layout
+
+\begin_layout Abstract
 This filter is intended for use biasing germanium detectors for the LEGEND
- experiment where the load current is expected to be < 1 nA and a large
+ experiment, where the load current is expected to be < 1 nA and a large
  series resistance is acceptable.
  The final filter characteristics are 100 MΩ input resistance, 100 MΩ output
  resistance, and 16 nF capacitance to ground.
  The expected capacitance between input and output is 0.13 pF.
  The filter is constructed to minimize radiation power transfer by keeping
- the input on the same axis as the output, having the ground current symmetric
- about the output axis so grounding bypass capacitor radiation is canceled
- and is emitted perpendicular to the output axis.
- The entire filter is contained in a sealed tube that mounts on a front-side
- nut SHV bulkhead jack, which can be filled with oil.
- 
+ the input on the same axis as the output and keeping the ground current
+ symmetric about the output axis so capacitor radiation is emitted perpendicular
+ to the output axis and cancels.
+ The entire filter is contained in a sealed tube that can be filled with
+ oil and mounts on a front-side nut SHV bulkhead jack.
+ The SHV jack uses a gasket seal and is suitable for use in an oil filled
+ application.
+ The final diameter is 3/4 inches with a length behind the bulkhead of 3-1/2
+ inches to the output cable.
+ The mounting hole is a common 1/2 inch D shaped standard.
 \end_layout
 
 \begin_layout Part*
+\begin_inset Newpage pagebreak
+\end_inset
+
 Parts:
 \end_layout
 
 \begin_layout Itemize
-1 SHV bulkhead jack, TE Connectivity AMP Connectors 5225059-3
+1 SHV bulkhead jack, TE Connectivity AMP Connectors 5225059-3.
 \end_layout
 
 \begin_layout Itemize
-1 3/4
-\begin_inset Quotes erd
-\end_inset
-
- OD 0.032
-\begin_inset Quotes erd
-\end_inset
-
- wall copper 101 tube cut to 3.16
-\begin_inset Quotes erd
-\end_inset
-
-
+1 3/4 inch OD 0.032 inch wall copper 101 tube cut to 3.16 inches.
 \end_layout
 
 \begin_layout Itemize
-6 2.7 nF 6 kV ceramic capacitors, Vishay Vitramon HV2225Y272KX6ATHV
+6 2.7 nF 6 kV ceramic capacitors, Vishay Vitramon HV2225Y272KX6ATHV.
 \end_layout
 
 \begin_layout Itemize
-1 0.625
-\begin_inset Quotes erd
-\end_inset
-
- OD 0.26
-\begin_inset Quotes erd
-\end_inset
-
- ID copper washer 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fn:PartSub"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
+1 0.75 inch OD 0.25 inch ID copper washer.
 \end_layout
 
 \begin_layout Itemize
-1 5.5 mm brass hex standoff cut to 0.25
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fn:PartSub"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-2 100 MΩ 7.5 kV axial lead resistors, Ohmite MOX1125231006FE
-\end_layout
-
-\begin_layout Itemize
-Epoxy, Loctite Hysol EA 0151
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fn:PartSub"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-20 mL of silicone oil, Super Lube 45NA65
-\end_layout
-
-\begin_layout Standard
+1 5.5 mm brass hex standoff cut to 0.25 inches.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fn:PartSub"
-
-\end_inset
-
-Some desired components were unavailable and substitutions were made.
- Recommend: 5.5 mm bare brass hex standoff in 0.25
+5.5 mm bare brass hex standoff in 0.25
 \begin_inset Quotes erd
 \end_inset
 
- length, 0.75
-\begin_inset Quotes erd
-\end_inset
-
- OD copper washer with hole slightly larger than the cable to be used, and
- Master Bond EP41S-5 epoxy.
+ length were unavailable.
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+2 100 MΩ 7.5 kV axial lead resistors, Ohmite MOX1125231006FE.
+\end_layout
+
+\begin_layout Itemize
+Epoxy, Loctite Hysol EA 0151.
+\end_layout
+
+\begin_layout Itemize
+20 mL of silicone oil, Super Lube 45NA65.
+\end_layout
+
+\begin_layout Itemize
+Section of high voltage cable for the output.
+\end_layout
+
+\begin_layout Itemize
+Section of wire braid to shield the output cable.
+\end_layout
+
+\begin_layout Itemize
+Copper tube for resistor to output cable, AWG 20 wire terminal crimp connector
+ with plastic removed.
+\end_layout
+
+\begin_layout Itemize
+Cable grommet.
+\end_layout
+
+\begin_layout Itemize
+Copper tape.
+\end_layout
+
+\begin_layout Itemize
+Kapton tape.
 \end_layout
 
 \begin_layout Part*
@@ -239,8 +216,19 @@ Tape over the opening in the SHV jack body to prevent any metal from getting
 \end_layout
 
 \begin_layout Enumerate
-Remove the nickel layer around the edge of the SHV jack body with a file.
- 
+Remove the nickel layer around the largest diameter surface of the SHV jack
+ body with a file, this is where the tube will later be soldered.
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SHVjackPlating"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -281,6 +269,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SHVjackPlating"
+
+\end_inset
+
 Left: SHV jack body with openings taped over.
  Center: some of nickel plating filed off revealing underlying brass.
  Right: all nickel from surface to be soldered removed, also showing the
@@ -302,14 +296,14 @@ Left: SHV jack body with openings taped over.
 \end_layout
 
 \begin_layout Enumerate
-Tin the SHV jack body.
+Tin the uncoated surface of the SHV jack body to ease making a good solder
+ connection with the tube later.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 Use a tip that will provide good heat transfer and set the soldering iron
  to it's highest temperature.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -318,17 +312,32 @@ The entire SHV jack body will be heated to near the solder melting temperature,
  of paper towels.
 \end_layout
 
-\begin_layout Enumerate
-Apply a small blob of solder to the edge of the SHV jack body.
+\begin_deeper
+\begin_layout Subsubsection*
+See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TinningSHVjack"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ for tinning the SHV jack.
 \end_layout
 
 \begin_layout Enumerate
-Spread the blob of solder around the edge of the sHV jack body until it
- covers the entire edge.
+Apply a small blob of solder to the uncoated surface of the SHV jack body.
 \end_layout
 
 \begin_layout Enumerate
-Remove any excess solder with solder wick.
+Spread the blob of solder around the surface until it covers the entire
+ surface where the nickel was removed.
+\end_layout
+
+\begin_layout Enumerate
+Remove any excess solder with fluxed solder wick.
 \begin_inset Float figure
 placement H
 wide false
@@ -374,6 +383,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TinningSHVjack"
+
+\end_inset
+
 Top left: a small blob of solder applied to edge of SHV jack body.
  Top right: spreading the solder around the edge.
  Bottom left: extra solder after covering entire edge.
@@ -391,6 +406,7 @@ Top left: a small blob of solder applied to edge of SHV jack body.
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Subsection
 Install SHV pin on resistor
 \end_layout
@@ -399,7 +415,7 @@ Install SHV pin on resistor
 Check that the resistor end which will have the pin fits freely in the connector
 , for the Ohmite MOX1125231006FE resistors most easily fit in the connect
  but one was found that wouldn't fit without being sanded down.
- It needs to have enough of a gap that oil can flow in.
+ It needs to have enough of a gap that oil can easily flow in.
  If one end doesn't fit try the other end or a different resistor, some
  resistors are a little thicker than others even in the same batch, and
  use the wide resistor for the output of the filter.
@@ -408,7 +424,7 @@ Check that the resistor end which will have the pin fits freely in the connector
 \end_layout
 
 \begin_layout Enumerate
-Cut the fit rested lead of the resistor down to the central conductor length
+Cut the fit tested lead of the resistor down to the central conductor length
  in the connector trim recommendations, 0.234
 \begin_inset Quotes erd
 \end_inset
@@ -429,6 +445,20 @@ Solder the pin on the lead.
 \end_layout
 
 \begin_deeper
+\begin_layout Subsubsection*
+See figure for 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PinSoldering"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ soldering the pin on the resistor.
+\end_layout
+
 \begin_layout Enumerate
 Tin the lead, there should be enough solder that will fill the gap in the
  pin but not so much it comes out of the pin once assembled.
@@ -483,6 +513,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PinSoldering"
+
+\end_inset
+
 Left: solder blob on resistor lead ready for insertion into SHV pin.
  Center: inserting resistor by heating SHV pin.
  Right: Assembled SHV pin and resistor held with paper towels because the
@@ -514,6 +550,14 @@ Assemble the parts in a clean room or wear gloves at a minimum.
 \begin_layout Enumerate
 Clean the SHV jack and the resistor with the SHV pin well with isopropyl
  alcohol.
+\end_layout
+
+\begin_layout Enumerate
+Prepare for epoxy application.
+ If a centrifuge and/or vacuum chamber will be used make sure they are ready
+ to go so the epoxy can be rapidly degassed and applied while it still flows
+ easily.
+ Read the rest of the instructions in this section ahead of time.
 \end_layout
 
 \begin_layout Enumerate
@@ -561,6 +605,8 @@ Hold the SHV pin and resistor pin side up so any epoxy that flows during
  Apply a small amount of epoxy to the region where the pin meets the resistor.
  It only needs to be enough to keep oil from leaking through the pin hole,
  it is not necessary to pot the connector with epoxy.
+ Don't get any epoxy past the chamfered ridge a little further from the
+ pin tip than center, that's the mating surface for the SHV connector.
 \end_layout
 
 \begin_layout Enumerate
@@ -646,6 +692,17 @@ Preparing the tube
 \begin_layout Enumerate
 Measure the section of tube using the tube jig and cut to length with tube
  cutter.
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CuttingTube"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -672,6 +729,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CuttingTube"
+
+\end_inset
+
 Left: measuring tube with jig.
  Right: cutting tube with tube cutter.
 \end_layout
@@ -707,7 +770,17 @@ Place the cut tube in the jig and drill the 3/32
  to the output from any current flowing radially through the capacitors
  will cancel.
  This allows two, three, four, or six capacitors but not one or five capacitors.
- 
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TubeHoles"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -737,6 +810,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TubeHoles"
+
+\end_inset
+
 Left: tube in jig ready to be drilled.
  Right: half of jig removed after drilling holes.
 \end_layout
@@ -764,6 +843,17 @@ Test fit the SHV jack in the tube, remember that a small gap is necessary
  in the desired position.
  The connector should be flush with the end of the tube, or slightly less
  inserted than flush so that the sealing ring can still be fully compressed.
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PrepareTube"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -809,6 +899,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PrepareTube"
+
+\end_inset
+
 Left: tube bored out to allow connector to fit.
  Center: tinned tube.
  Right: connector resting on shoulder in bored out tube.
@@ -825,7 +921,281 @@ Left: tube bored out to allow connector to fit.
 \end_layout
 
 \begin_layout Section
-Assemble the capacitors
+Assemble the resistors and capacitors
+\end_layout
+
+\begin_layout Enumerate
+Trim the resistor leads that will go in the standoff down to less than the
+ standoff length, 0.25
+\begin_inset Quotes erd
+\end_inset
+
+ for a single row of 2225 capacitors, leaving at least a couple millimeteres
+ for a solder connection.
+\end_layout
+
+\begin_layout Enumerate
+Tin the resistors and both contacts of the capacitors.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Remove any excess solder from the capacitor contacts that will mate with
+ the hex standoff.
+\end_layout
+
+\begin_layout Enumerate
+Leave a solder bulge to the capacitor contacts that will mate with the tube.
+ Measure the size of the capacitors with the bulge so the assembled capacitors
+ and standoff will just fit in the tube.
+ For the 0.686 inch ID tube and 5.5 mm standoffs this leaves a nomial 0.234
+ inches for each capacitor, allowing for only around 10 mils for a solder
+ bulge.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cut the hex standoff to size, file off any sharp edges, and tin the standoff
+ including the hole in the middle where the resistor leads will go.
+\end_layout
+
+\begin_layout Enumerate
+Place the capacitors and standoff in the jig and lightly tighten the bolts
+ to hold the capacitors in place.
+ The spring in the plastic jig will push the capacitors fully against the
+ standoff when soldering without requiring significant deflection.
+\end_layout
+
+\begin_layout Enumerate
+Heat the standoff while applying additional solder to the capacitor to standoff
+ joint until the solder flow.
+ Then apply sufficient solder to all joint.
+ Do not leave any protruding points that could cause discharges.
+ If the solder is hot enough it will form a smooth surface when the iron
+ is removed before it cools enough to solidify.
+\end_layout
+
+\begin_layout Enumerate
+Check against the tube to make sure the capacitor contacts will be well
+ ceneted on the holes in the side of the tube, it should be in the right
+ position when the resistor body is flush with the standoff.
+\end_layout
+
+\begin_layout Enumerate
+Solder the resistor lead from the SHV jack and resistor into the center
+ of the standoff.
+ Try to keep the resistors well centered, good alignment will minimize the
+ radiative energy transfer bypassing the filter.
+\end_layout
+
+\begin_layout Enumerate
+Put a piece of high temperature tape, like Kapton, over the output side
+ of the standoff and capacitors.
+ Cut a hole in the tape to expose the hole in the standoff.
+ This is a dust mask in case filing is needed when attaching the output
+ cable.
+\end_layout
+
+\begin_layout Enumerate
+Solder the output resistor lead into the center of the standoff.
+\end_layout
+
+\begin_layout Section
+Assembly the cable and tube
+\end_layout
+
+\begin_layout Subsection
+Attach the cable
+\end_layout
+
+\begin_layout Standard
+Assembly differs if the cable has a connector already that prevents adding
+ the washer after the cable and tube are already attached to the filter.
+ If the cable doesn't have a connector on the end then not adding the washer
+ until after the tube is in place makes it easier to handle.
+\end_layout
+
+\begin_layout Enumerate
+Trim the resistor lead and cable center conductor to fit inside the available
+ tube, 0.315 inchs total for the AWG 20 furrule.
+ Leave plenty of extra sheild on the cable to later solder to the washer.
+\end_layout
+
+\begin_layout Enumerate
+Tin the resistor lead and cable center conductor.
+\end_layout
+
+\begin_layout Enumerate
+The furrle has a copper body but is nickel plated, which is hard to remove
+ from inside the tube and makes it hard to solder to.
+ Either ream the tube to remove the plating or apply a generous amount of
+ high activity flux to the inside of the tube.
+ It is possible to solder to nickel with agressive flux, no clean flux probably
+ won't work.
+\end_layout
+
+\begin_layout Enumerate
+Slide the furrule over the resistor lead and insert the signal cable into
+ the furrule.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the cable has a connector already, slide the cable through the grommet
+ washer and tube first.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pull the cable out slightly to expose some wire, heat the tube until solder
+ flows to exposed wire, then fully insert the cable and resistor lead and
+ remove heat.
+\end_layout
+
+\begin_layout Enumerate
+Gently tug on the cable to ensure it made a good connection.
+\end_layout
+
+\begin_layout Enumerate
+Ensure there are no solder points that might cause discharges.
+ If the solder is hot enough before the heat is removed it will form a smooth
+ surface before solidifying.
+ It is best to avoid filing as the mask won't completely keep dust out,
+ but if necessary file down any sharp points and clean away the dust.
+\end_layout
+
+\begin_layout Enumerate
+Remove the dust mask tape from the standoff and capacitors.
+\end_layout
+
+\begin_layout Subsection
+Attach the tube and washer
+\end_layout
+
+\begin_layout Enumerate
+Put some high temperature tape, like Kapton, around the end of the tube
+ covering the fill hole.
+ This is to prevent solder from not only getting into the hole but the entire
+ surface where tape will be used to seal the hole, so the entire outer surface
+ of the tube should be taped near the connector end to ensure it stays free
+ of solder.
+\end_layout
+
+\begin_layout Enumerate
+Slide tube section over filter, close to but not past the edge of the gasket
+ groove.
+ Rotate the tube so the holes are aligned with the capacitor contacts.
+\end_layout
+
+\begin_layout Enumerate
+Solder the tube section to the SHV jack, ensure there are no gaps for oil
+ to leak out of.
+\end_layout
+
+\begin_layout Enumerate
+Solder the capacitors to the tube through the holes in the side.
+ Look through the end of the tube to ensure they are connected.
+ Ensure the holes are completely plugged with solder so oil can't leak out.
+\end_layout
+
+\begin_layout Enumerate
+Solder the washer to the output end of the tube.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use two crossed pieces of Kapton tape to secure the washer.
+\end_layout
+
+\begin_layout Enumerate
+Solder the sections between the tape.
+\end_layout
+
+\begin_layout Enumerate
+Remove the tape and solder all the way around, this is an oil seal and it
+ needs to be free of gaps.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Solder the wire braid of the cable shield to the washer.
+ Leave a small gap for alcohol to flow out for cleaning, the seal will be
+ made with epoxy.
+\end_layout
+
+\begin_layout Subsection
+Sealing the cable connection
+\end_layout
+
+\begin_layout Enumerate
+Remove the tape coering the fill hole and clean the solder flux out of the
+ fitler.
+ Hold the filter connector end up and flow isopropyl alcohol in through
+ the fill hole and let it drain out the gap between the washer and cable.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is the last chance to clean the filter by flushing fluid through the
+ filter.
+ Unless an optional drain hole is added to the output end of the filter
+ it can only be cleaned by filling and draining through the same hole, which
+ won't be as effective, once the cable connection is sealed.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Degass some epoxy and apply it generously to the gap between the washer
+ and cable.
+ While it isn't critical to keep the expoy from flowing into the filter
+ the point is to seal the gap, not pot the filter.
+\end_layout
+
+\begin_layout Enumerate
+Slide the cable grommet into position to hold the epoxy in while it cures.
+ Apply some additional epoxy to the grommet if desired, any voids in the
+ epoxy on the filter exterior side of the washer will not be exposed to
+ high electric field and are of no concern for discharges.
+\end_layout
+
+\begin_layout Enumerate
+Tape around to grommet to ensure the epoxy remains in place while it cures.
+ This tape can be left in place afterward as a permanate part of the filter.
+\end_layout
+
+\begin_layout Enumerate
+Hold the filter connector end up so the epoxy flows into the gap and seals
+ as it cures.
+\end_layout
+
+\begin_layout Section
+Fill the filter with oil
+\end_layout
+
+\begin_layout Enumerate
+Turn the filter on its side so the fill hole is up.
+\end_layout
+
+\begin_layout Enumerate
+Use a syringe with a need to dispense oil into the fill hole.
+\end_layout
+
+\begin_layout Enumerate
+Tilt the filter to ensure oil flows into crevices in the connector end as
+ well as the cable end.
+ It should be as full as reasonably achievable.
+\end_layout
+
+\begin_layout Enumerate
+Cover the hole in tape, wrapping the tape all the way around to filter to
+ ensure it doesn't come loose.
+\end_layout
+
+\begin_layout Enumerate
+Keep it connector side down for a day to ensure there are no voids in the
+ oil near the high voltage pin of the connector.
+ After this any small voids in the oil will flow to regions of the filter
+ that are adjacent to the tube of the connector and not be a problem.
 \end_layout
 
 \end_body
