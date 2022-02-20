@@ -85,11 +85,6 @@ Eric L.
 \end_layout
 
 \begin_layout Address
-Department of Physics and Astronomy, University of North Carolina, Chapel
- Hill, NC 27514, USA
-\begin_inset Newline newline
-\end_inset
-
 Triangle Universities Nuclear Laboratory, Durham, NC 27708, USA
 \end_layout
 
@@ -133,20 +128,21 @@ Parts:
 \end_layout
 
 \begin_layout Itemize
-1 0.75 inch OD 0.25 inch ID copper washer.
+1 11/16 inch OD 1/4 inch ID copper washer.
+ Hillman 44142.
 \end_layout
 
 \begin_layout Itemize
-1 5.5 mm brass hex standoff cut to 0.25 inches.
+1 M4 5 mm brass hex standoff.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-5.5 mm bare brass hex standoff in 0.25
-\begin_inset Quotes erd
-\end_inset
-
- length were unavailable.
+Standoffs are typically narrower than a standard nut.
+ If perfectly aligned with the capacitor edges are against the tube wall
+ there should be 0.238 inches (6.04 mm) of available space for the hex standoff.
+ An M4 standoff is usually a little under 6 mm, leaving only a narrow gap
+ for solder, part tolerance, and misalignment.
 \end_layout
 
 \end_inset
@@ -175,20 +171,28 @@ Section of wire braid to shield the output cable.
 \end_layout
 
 \begin_layout Itemize
-Copper tube for resistor to output cable, AWG 20 wire terminal crimp connector
- with plastic removed.
-\end_layout
-
-\begin_layout Itemize
-Cable grommet.
-\end_layout
-
-\begin_layout Itemize
-Copper tape.
+Copper tube to cover resistor to output cable joint, cut piece of AWG 20
+ wire terminal crimp connector.
 \end_layout
 
 \begin_layout Itemize
 Kapton tape.
+\end_layout
+
+\begin_layout Itemize
+M2.5 washer, or something similar to use as a temporary spacer.
+\end_layout
+
+\begin_layout Itemize
+4 mm grommet, printed.
+\end_layout
+
+\begin_layout Itemize
+Tube jig, printed.
+\end_layout
+
+\begin_layout Itemize
+Capacitor jig, printed.
 \end_layout
 
 \begin_layout Part*
@@ -574,7 +578,7 @@ Prepare some epoxy.
 \begin_deeper
 \begin_layout Subsubsection*
 It is recommend to degassing the epoxy in a centrifuge to remove any bubbles
- that formed during mixing that could cause microdischarges.
+ that formed during mixing that could cause partial discharges.
 \end_layout
 
 \begin_layout Enumerate
@@ -594,7 +598,7 @@ Run the centrifuge at 1000 rpm for 3 minutes, too high and it will separate
 \end_layout
 
 \begin_layout Enumerate
-Keep the syring pointed down so the air bubble stays at the plunger until
+Keep the syringe pointed down so the air bubble stays at the plunger until
  ready for application.
 \end_layout
 
@@ -617,9 +621,10 @@ Fully insert the pin into the SHV jack then invert the SHV jack and set
 
 \begin_deeper
 \begin_layout Subsubsection*
-It is recommended to vacuum degass the epoxy to drive out any small bubbles
- that could cause microdischarges.
- Only do this if it can be accomplished within the working time of the epoxy.
+It is recommended to vacuum degas the epoxy to drive out any small bubbles
+ that could cause partial discharges.
+ Only do this if it can be accomplished within a fraction of the working
+ time of the epoxy.
 \end_layout
 
 \begin_layout Enumerate
@@ -713,7 +718,7 @@ status open
 \begin_inset Graphics
 	filename TubeMeasuredInJig.jpg
 	lyxscale 30
-	width 3in
+	height 3in
 
 \end_inset
 
@@ -721,7 +726,8 @@ status open
 \begin_inset Graphics
 	filename TubeCutting.jpg
 	lyxscale 30
-	width 3in
+	height 3in
+	rotateOrigin center
 
 \end_inset
 
@@ -791,15 +797,18 @@ status open
 \begin_inset Graphics
 	filename TubeInJig.jpg
 	lyxscale 30
-	width 3in
+	width 4in
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename TubeHolesDrilled.jpg
 	lyxscale 30
-	width 3in
+	width 4in
 
 \end_inset
 
@@ -816,8 +825,8 @@ name "fig:TubeHoles"
 
 \end_inset
 
-Left: tube in jig ready to be drilled.
- Right: half of jig removed after drilling holes.
+Top: tube in jig ready to be drilled.
+ Bottom: half of jig removed after drilling holes.
 \end_layout
 
 \end_inset
@@ -857,7 +866,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Enumerate
-Tin the end of the tube in the same manner the SHV jack was tinned.
+Tin the SHV jack end of the tube in the same manner the SHV jack was tinned.
  Check the fit again, if it doesn't go in there's probably a solder blob
  that needs to be wicked away.
 \begin_inset Float figure
@@ -870,8 +879,7 @@ status open
 \begin_inset Graphics
 	filename TubeConnectorEndBored.jpg
 	lyxscale 30
-	height 2in
-	rotateAngle -90
+	height 4in
 	rotateOrigin center
 
 \end_inset
@@ -880,8 +888,7 @@ status open
 \begin_inset Graphics
 	filename TubeTinned.jpg
 	lyxscale 20
-	height 2in
-	rotateAngle -90
+	height 4in
 	rotateOrigin center
 
 \end_inset
@@ -890,7 +897,7 @@ status open
 \begin_inset Graphics
 	filename ConnectAndTubeTestFit.jpg
 	lyxscale 30
-	height 2in
+	height 4in
 	rotateOrigin center
 
 \end_inset
@@ -920,65 +927,157 @@ Left: tube bored out to allow connector to fit.
 
 \end_layout
 
+\begin_layout Enumerate
+Check the washer in the cable end of the tube.
+ For the chosen washer and tube it should be a press fit.
+ If it can't fit into the tube if can be soldered over the end, if it falls
+ through it can be secured with Kapton tape to hold in place during initial
+ soldering.
+\end_layout
+
+\begin_layout Enumerate
+Tin the cable end of the tube, wick away any exces solder if the washer
+ is a press fit.
+\end_layout
+
+\begin_layout Enumerate
+Solder the washer to the cable end of the tube.
+ The cable shield will be sodered here later so a large solder excess is
+ fine.
+ Make sure all gaps between the tube and washer are sealed as this is an
+ oil boundry.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename TubeCableEndTinned.jpg
+	lyxscale 30
+	height 4in
+	rotateAngle 90
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename TubeWasherInstalled.jpg
+	lyxscale 30
+	height 4in
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left: cable end of tube tinned for a press fit washer.
+ Right: washer installed in cable end of tube.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Assemble the resistors and capacitors
 \end_layout
 
 \begin_layout Enumerate
-Trim the resistor leads that will go in the standoff down to less than the
- standoff length, 0.25
-\begin_inset Quotes erd
-\end_inset
-
- for a single row of 2225 capacitors, leaving at least a couple millimeteres
- for a solder connection.
-\end_layout
-
-\begin_layout Enumerate
-Tin the resistors and both contacts of the capacitors.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Remove any excess solder from the capacitor contacts that will mate with
- the hex standoff.
-\end_layout
-
-\begin_layout Enumerate
-Leave a solder bulge to the capacitor contacts that will mate with the tube.
- Measure the size of the capacitors with the bulge so the assembled capacitors
- and standoff will just fit in the tube.
- For the 0.686 inch ID tube and 5.5 mm standoffs this leaves a nomial 0.234
- inches for each capacitor, allowing for only around 10 mils for a solder
- bulge.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Cut the hex standoff to size, file off any sharp edges, and tin the standoff
- including the hole in the middle where the resistor leads will go.
-\end_layout
-
-\begin_layout Enumerate
-Place the capacitors and standoff in the jig and lightly tighten the bolts
- to hold the capacitors in place.
+Place the capacitors and standoff in the jig with an M2.5 washer under the
+ standoff for a slight spacer.
+ Lightly tighten the bolts to hold the capacitors in place.
  The spring in the plastic jig will push the capacitors fully against the
  standoff when soldering without requiring significant deflection.
+ Once tight, remove the washer.
+\end_layout
+
+\begin_layout Enumerate
+Test fit the capacitors to ensure they can be inserted in the tube, thhey
+ will protrude slightly from one side of the jig.
+ Select a standoff that will result in a close fit, some filing of the standoff
+ or tube may be necessary.
+ 
+\series bold
+Do not file the resistors.
 \end_layout
 
 \begin_layout Enumerate
 Heat the standoff while applying additional solder to the capacitor to standoff
- joint until the solder flow.
- Then apply sufficient solder to all joint.
- Do not leave any protruding points that could cause discharges.
- If the solder is hot enough it will form a smooth surface when the iron
- is removed before it cools enough to solidify.
+ joint until the solder flows.
+ Then apply sufficient solder to fill the center of the standoff.
+ Solder should flow along all the capacitors while spreading around the
+ standoff.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename CapacitorsInJig.jpg
+	lyxscale 30
+	height 3in
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapacitorsSolderedInJig.jpg
+	lyxscale 30
+	height 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left: capacitors and standoff in jig before soldering.
+ Right: bottom of capacitors and standoff in jig after woldering, showing
+ the solder flowed along the standoff to connect all along the capacitors.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Check against the tube to make sure the capacitor contacts will be well
- ceneted on the holes in the side of the tube, it should be in the right
- position when the resistor body is flush with the standoff.
+Take the capacitors out of the jig and make sure the can slide into position
+ in the tube.
+ It is likely some filing of the tube will be required.
+\end_layout
+
+\begin_layout Enumerate
+Place the capacitors back in the jig to keep them assembled while soldering.
+\end_layout
+
+\begin_layout Enumerate
+Trim the resistor leads that will go in the standoff down to less than the
+ standoff length, leaving at least a couple millimeteres for a solder connection.
+ The leads can be bend so they miss each other in the hole.
 \end_layout
 
 \begin_layout Enumerate
@@ -986,22 +1085,68 @@ Solder the resistor lead from the SHV jack and resistor into the center
  of the standoff.
  Try to keep the resistors well centered, good alignment will minimize the
  radiative energy transfer bypassing the filter.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Put a piece of high temperature tape, like Kapton, over the output side
- of the standoff and capacitors.
- Cut a hole in the tape to expose the hole in the standoff.
- This is a dust mask in case filing is needed when attaching the output
- cable.
+Support the SHV jack, resistor, and capacitors assembly by resting it on
+ the SHV jack.
+ Putting a part with a side hole in the middle will help keep it from tipping.
 \end_layout
 
 \begin_layout Enumerate
 Solder the output resistor lead into the center of the standoff.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename CapacitorsTestFit.jpg
+	lyxscale 30
+	height 3in
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename FilterInternalSolderSupport.jpg
+	lyxscale 30
+	height 3in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left: capacitors test fit in tube.
+ Right: SHV jack, inpout resistor, capacitors, and output resistor supported
+ by SHV jack for soldering.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Assembly the cable and tube
+Attach the cable and tube
 \end_layout
 
 \begin_layout Subsection
@@ -1010,46 +1155,41 @@ Attach the cable
 
 \begin_layout Standard
 Assembly differs if the cable has a connector already that prevents adding
- the washer after the cable and tube are already attached to the filter.
- If the cable doesn't have a connector on the end then not adding the washer
- until after the tube is in place makes it easier to handle.
+ the tube after the cable is already attached.
+ If the cable doesn't have a connector on the end then not adding the tube
+ after the cable is attached makes it easier to handle.
 \end_layout
 
 \begin_layout Enumerate
-Trim the resistor lead and cable center conductor to fit inside the available
- tube, 0.315 inchs total for the AWG 20 furrule.
- Leave plenty of extra sheild on the cable to later solder to the washer.
+Cut a few millimeters of AWG 20 furrule and trim the resistor lead and cable
+ center conductor to fit inside the furrule.
 \end_layout
 
 \begin_layout Enumerate
-Tin the resistor lead and cable center conductor.
+Tin the resistor lead and cable center conductor, leave a large solder blub
+ so it will fill the furrle.
 \end_layout
 
 \begin_layout Enumerate
 The furrle has a copper body but is nickel plated, which is hard to remove
  from inside the tube and makes it hard to solder to.
- Either ream the tube to remove the plating or apply a generous amount of
- high activity flux to the inside of the tube.
- It is possible to solder to nickel with agressive flux, no clean flux probably
- won't work.
+ However, the solder joint between the resistor and wire should be good.
 \end_layout
 
 \begin_layout Enumerate
-Slide the furrule over the resistor lead and insert the signal cable into
- the furrule.
+Slide the furrule over the resistor lead while heating the furrule until
+ the solder melt and the furrle slides on fully.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 If the cable has a connector already, slide the cable through the grommet
- washer and tube first.
+ and tube first.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Pull the cable out slightly to expose some wire, heat the tube until solder
- flows to exposed wire, then fully insert the cable and resistor lead and
- remove heat.
+Heat the furrule and slide the cable all the way into the furrule.
 \end_layout
 
 \begin_layout Enumerate
@@ -1065,73 +1205,91 @@ Ensure there are no solder points that might cause discharges.
 \end_layout
 
 \begin_layout Enumerate
-Remove the dust mask tape from the standoff and capacitors.
+Clean the solder flux off the filter, this is the last chance to do so before
+ the tube prevents easy access to the filter internals.
 \end_layout
 
 \begin_layout Subsection
-Attach the tube and washer
+Install the tube
 \end_layout
 
 \begin_layout Enumerate
-Put some high temperature tape, like Kapton, around the end of the tube
- covering the fill hole.
- This is to prevent solder from not only getting into the hole but the entire
- surface where tape will be used to seal the hole, so the entire outer surface
- of the tube should be taped near the connector end to ensure it stays free
- of solder.
+Remove any protective tape inside the filter and slide the tube into place.
+ Ensure the capacitor pads are visable through the holes in the sides of
+ the tube.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FilterInternalInsertion.jpg
+	lyxscale 30
+	width 5in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FinalCapacitorSoldering.jpg
+	lyxscale 30
+	height 2in
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename FinalBraidSoldering.jpg
+	lyxscale 30
+	height 2in
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Filter assembly just before tube is slide into position.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Slide tube section over filter, close to but not past the edge of the gasket
- groove.
- Rotate the tube so the holes are aligned with the capacitor contacts.
+Heat the tube right next to the holes and feed solder into the hole until
+ it flows in and joints the tube to the capacitor.
 \end_layout
 
 \begin_layout Enumerate
-Solder the tube section to the SHV jack, ensure there are no gaps for oil
- to leak out of.
+Solder the SHV jack to the tube.
+ Ensure there are no gaps as this is an oil seal.
 \end_layout
 
 \begin_layout Enumerate
-Solder the capacitors to the tube through the holes in the side.
- Look through the end of the tube to ensure they are connected.
- Ensure the holes are completely plugged with solder so oil can't leak out.
+Solder the end of the braid to the washer, make sure no stray wires go into
+ the hole that could cause discahrges.
+ This gap will be filled with epoxy.
 \end_layout
 
-\begin_layout Enumerate
-Solder the washer to the output end of the tube.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Use two crossed pieces of Kapton tape to secure the washer.
-\end_layout
-
-\begin_layout Enumerate
-Solder the sections between the tape.
-\end_layout
-
-\begin_layout Enumerate
-Remove the tape and solder all the way around, this is an oil seal and it
- needs to be free of gaps.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Solder the wire braid of the cable shield to the washer.
- Leave a small gap for alcohol to flow out for cleaning, the seal will be
- made with epoxy.
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Sealing the cable connection
 \end_layout
 
 \begin_layout Enumerate
-Remove the tape coering the fill hole and clean the solder flux out of the
- fitler.
- Hold the filter connector end up and flow isopropyl alcohol in through
- the fill hole and let it drain out the gap between the washer and cable.
+Hold the filter connector end up and flow isopropyl alcohol in through the
+ fill hole, letting it drain out the gap between the washer and cable.
 \end_layout
 
 \begin_deeper
@@ -1145,17 +1303,16 @@ This is the last chance to clean the filter by flushing fluid through the
 
 \end_deeper
 \begin_layout Enumerate
-Degass some epoxy and apply it generously to the gap between the washer
- and cable.
- While it isn't critical to keep the expoy from flowing into the filter
- the point is to seal the gap, not pot the filter.
+Mix some epoxy and apply it generously to the gap between the washer and
+ cable.
+ It isn't critical to keep the expoy from flowing into the filter but the
+ point is to seal the gap, not pot the filter.
 \end_layout
 
 \begin_layout Enumerate
 Slide the cable grommet into position to hold the epoxy in while it cures.
- Apply some additional epoxy to the grommet if desired, any voids in the
- epoxy on the filter exterior side of the washer will not be exposed to
- high electric field and are of no concern for discharges.
+ Any voids in the epoxy on the filter exterior side of the washer will not
+ be exposed to high electric field and are of no concern for discharges.
 \end_layout
 
 \begin_layout Enumerate
@@ -1166,6 +1323,40 @@ Tape around to grommet to ensure the epoxy remains in place while it cures.
 \begin_layout Enumerate
 Hold the filter connector end up so the epoxy flows into the gap and seals
  as it cures.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FinalGrommetEpoxy.jpg
+	lyxscale 30
+	width 3in
+	rotateAngle -90
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Grommet taped to end of filter to hold epoxy in place while it cures.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
