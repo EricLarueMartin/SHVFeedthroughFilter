@@ -3,7 +3,7 @@ Coaxial feedthrough filter that mounts on an SHV bulkhead.
 Uses commercially available parts to make a high voltage filter that fits on a standard SHV bulkhead connector.
 This filter was designed for use biasing cryogenically cooled solid state detectors, which have very low leakage current making high resistance series elements suitable.
 
-Connector is TE Connectivity AMP Connectors 5225059-3, this is out of production and an additional part to go from available SHV connectors to 0.686 ID tube will become necessary when stocks depleate.
+Connector used for protoype was TE Connectivity AMP Connectors 5225059-3, this is out of production and an alternative will become necessary when stocks depleate. The BM60321 from Bracke Manufacturing is likely a direct swap replacement. A part to seal the tube with a front side nut mounting and a hole for the more common SHV rear side nut bulkhead connector, such as PE3239 from Pasternack or 51494-2 from TE Connectivity AMP Connectors, is also included. Using the adapter will result in a longer filter.
 
 Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. This series of resistor is highly recommend due to the low (0.25 pF) capacitance, even though a shorter resistor would fit.
 
