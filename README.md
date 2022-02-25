@@ -9,16 +9,13 @@ SHV bulkhead connectors on both ends allow mounting the filter such that the bod
 Uses commercially available parts to make a high voltage filter that fits on a standard SHV bulkhead connector.
 This filter was designed for use biasing cryogenically cooled solid state detectors, which have very low leakage current making high resistance series elements suitable.
 
-Connector used for protoype was TE Connectivity AMP Connectors 5225059-3, this is out of production and an alternative will become necessary when stocks depleate. The BM60321 from Bracke Manufacturing appears to be a direct replacement. An tube sized adapter part can be used with common SHV rear side nut bulkhead connectors, such as PE3239 from Pasternack or 51494-2 from TE Connectivity AMP Connectors. Using the adapter results in a longer filter and a longer tube jig is used.
-
-SHV to SHV using TE Connectivity AMP Connectors 51494-2 and tube adapters.
-![SHV to SHV Feedthrough Filter with Tube Adapters](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/DoubleSHVFeedthroughFilterUsingAdapters.png)
+Connector used for protoype was TE Connectivity AMP Connectors 5225059-3, this is out of production and an alternative will become necessary when stocks depleate. The BM61482 from Bracke Manufacturing appears to be a direct replacement. 
 
 Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. This series of resistor is highly recommend due to the low (0.25 pF) capacitance, even though a shorter resistor would fit.
 
 Capacitors are 6kV 2225 package, such as Vishay Vitramon HV2225*
 
-The center piece for the capacitors to solder to is a brass standoff, 6 mm hex diameter and 5 mm or 6mm heigh are both suitable.
+The center piece for the capacitors to solder to is a brass standoff, 6 mm hex diameter and 5 mm or 6mm height are both suitable.
 
 The tube is a 0.686 inch ID brass or copper tube. A 3/4 inch 0.032 inch wall tube is readily available and suitable.
 
@@ -26,7 +23,7 @@ The other end can be another SHV connector, HV pigtail, whatever is desired.
 
 Version with a pigtail.
 ![SHV to Pigtail Feedthrough Filter](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/SHVFeedthroughFilter.png)
-For a pigtail the filter is sealed with a 11/16 inch OD copper washer soldered to the tube, wire braid soldered to the washer, and the gap around the cable sealed with epoxy. This results in a complete Faraday cage around the filter.
+For this pigtail the filter is sealed with a 11/16 inch OD copper washer soldered to the tube, wire braid soldered to the washer, and the gap around the cable sealed with epoxy. This results in a complete Faraday cage around the filter.
 
 A bleeder resistor on the load side of this filter will result in voltage drop across the series resistors. Bleeder resistors are not required if stored energy is under 10 J. 
 
