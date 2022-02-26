@@ -9,9 +9,17 @@ SHV bulkhead connectors on both ends allow mounting the filter such that the bod
 Uses commercially available parts to make a high voltage filter that fits on a standard SHV bulkhead connector.
 This filter was designed for use biasing cryogenically cooled solid state detectors, which have very low leakage current making high resistance series elements suitable.
 
+Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. This series of resistor is highly recommend due to the low (0.25 pF) capacitance, even though a shorter resistor would fit.
+
+![Mini-Mox Construction](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/Mini-MoxInternalConstruction.jpg)
+
 Connector used for protoype was TE Connectivity AMP Connectors 5225059-3, this is out of production and an alternative will become necessary when stocks depleate. The BM61482 from Bracke Manufacturing appears to be a direct replacement. 
 
-Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. This series of resistor is highly recommend due to the low (0.25 pF) capacitance, even though a shorter resistor would fit.
+![5225059-3](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/5225059-3.webp)
+
+The BM60261 connector for use with RG-8 would allow more room for the resistor. As the outer body has a 3/4 inch maximum diameter it could be butt soldered to the tube. 
+
+![BM60261](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/BM60261.jpg)
 
 Capacitors are 6kV 2225 package, such as Vishay Vitramon HV2225*
 
@@ -27,7 +35,7 @@ For this pigtail the filter is sealed with a 11/16 inch OD copper washer soldere
 
 A bleeder resistor on the load side of this filter will result in voltage drop across the series resistors. Bleeder resistors are not required if stored energy is under 10 J. 
 
-The prototype filter used six 2.7 nF capacitors, which will only result in 0.3 J of stored energy at 6 kV. With 100 Mohm series resistors the maximum current the filter can produce is only 60 microamps at 6 kV, which is negligible compared to the ~10 mA requires to produce a dangerous shock.
+The prototype filter used six 2.7 nF capacitors, which will only result in 0.3 J of stored energy at 6 kV. With 100 Mohm series resistors the maximum current the filter can produce is only 60 microamps at 6 kV, which is negligible compared to the ~10 mA requires to produce a dangerous shock. With 0.25 pF of parallel capacitance this high of a ressistance isn't effective at frequencies above 10 kHz. 5 Mohm resistors would still limit the current from a shock to ~ 1 mA and performance at power distribution frequencies would still be better than 100 dB.
 
 If a fitler with a larger capacitance and smaller resistors is constructed pay attention to potentiol electrical shock hazzards.
 
