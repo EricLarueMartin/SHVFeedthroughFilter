@@ -9,7 +9,7 @@ SHV bulkhead connectors on both ends allow mounting the filter such that the bod
 Uses commercially available parts to make a high voltage filter that fits on a standard SHV bulkhead connector.
 This filter was designed for use biasing cryogenically cooled solid state detectors, which have very low leakage current making high resistance series elements suitable.
 
-Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. This series of resistor is highly recommend due to the low (0.25 pF) capacitance, even though a shorter resistor would fit.
+Resistors are axial lead able to handle the high voltage while the sides of the resistor body are near ground, such as Ohmite MOX112523*. Though a shorter resistor would work the stray capacitance dominates performance and this model has the lowest at 0.25 pF.
 
 ![Mini-Mox Construction](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/Mini-MoxInternalConstruction.jpg)
 
@@ -41,10 +41,8 @@ A bleeder resistor on the load side of this filter will result in voltage drop a
 
 The prototype filter used six 2.7 nF capacitors, which will only result in 0.3 J of stored energy at 6 kV. With 100 Mohm series resistors the maximum current the filter can produce is only 60 microamps at 6 kV, which is negligible compared to the ~10 mA requires to produce a dangerous shock. With 0.25 pF of parallel capacitance this high of a ressistance isn't effective at frequencies above 10 kHz. 5 Mohm resistors would still limit the current from a shock to ~ 1 mA and performance at power distribution frequencies would still be better than 100 dB.
 
-If a fitler with a larger capacitance and smaller resistors is constructed pay attention to potentiol electrical shock hazzards.
-
 The filter attenuation is excellent. Pigtail version measured from 30 kHz to 100 MHz using a network analyzer.
 ![Filter attenuation](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/FilterAttenuation.jpg)
-The reduced performance above 90 MHz might be due to pickup noise after the filter on the line to the network analyzer. With an output power of -3 dBm the measured signal for -80 dB is only 5 pW, and an even stronger signal was measured for an open connection.
+The reduced performance above 90 MHz might be due to pickup noise after the filter on the line to the network analyzer. As there wasn't a BNC connector on the end there's about an inch of unshielded cable connecting to the network analyer. With an output power of -3 dBm the measured signal for -80 dB is only 5 pW, and an even stronger signal was measured for an open connection suggesting the filter provides some shielding over just having an open BNC connector to the network analyzer.
 
 ![Measured attenuation for an open](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/OpenAttenuation.jpg)
