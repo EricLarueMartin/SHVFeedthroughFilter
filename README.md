@@ -17,9 +17,13 @@ Connector used for protoype was TE Connectivity AMP Connectors 5225059-3, this i
 
 ![5225059-3](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/5225059-3.webp)
 
-The BM60261 connector for use with RG-8 would allow more room for the resistor. As the outer body has a 3/4 inch maximum diameter it could be butt soldered to the tube. 
+The BM60261 connector for use with RG-8 would allow more room for the resistor. As the outer body has a 3/4 inch maximum diameter it could be butt soldered to a shorter tube or the connector could be trimmed down. 
 
 ![BM60261](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/BM60261.jpg)
+
+The BM60829 would certainly give ample room for the resistor, but the overall length of the filter would increase.
+
+![BM60829](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/main/BM60829.jpg)
 
 Capacitors are 6kV 2225 package, such as Vishay Vitramon HV2225*
 
