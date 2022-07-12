@@ -193,7 +193,7 @@ Ground break insulator, printed part
 
 \begin_layout Itemize
 End cap, printed part.
-\begin_inset Newline newline
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1066,12 +1066,30 @@ Slide the insulator section over the SHV connector and fold the resistor
 
 \begin_layout Enumerate
 Once a good position is determined epoxy the ground break insulator in place.
- Hold the assembly connector side down so epoxy flows into the gaps around
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Apply epoxy to the entire inner surface of the ground break insulator, this
+ is potentioally an oil boundry.
+\end_layout
+
+\begin_layout Enumerate
+Hold the assembly connector side down so epoxy flows into the gaps around
  the connector and tape around the joint to keep the epoxy from spilling
  out.
- Keep the assembly held tight as it cures and ensure it is well aligned
- or the filter will be crooked when fully assembled.
- The SHV connector assembly may be attached to the filter (next step) while
+ 
+\end_layout
+
+\begin_layout Enumerate
+Keep the assembly held tight as it cures and ensure it is well aligned or
+ the filter will be crooked when fully assembled.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The SHV connector assembly may be attached to the filter (next step) while
  the epoxy is still workable to more easily notice and correct any alignment
  problems.
 \begin_inset Float figure
@@ -1112,6 +1130,7 @@ SHV connector, ground resistor, and ground insulator installed on filter.
 
 \end_layout
 
+\end_deeper
 \begin_layout Subsection
 Attach the SHV connector assembly to the filter.
 \end_layout
@@ -1128,8 +1147,13 @@ Apply epoxy to the SHV pin around the joint with the resistor.
 \end_layout
 
 \begin_layout Enumerate
-Apply epoxy to the ground break insulator and insert it into the filter
- tube.
+Generously apply epoxy to the ground break insulator.
+ Coat the entire inner surface to add a second sealing layer in case the
+ filter is filled with oil.
+\end_layout
+
+\begin_layout Enumerate
+Insert the ground break insulator with SHV connector into the filter tube.
  The SHV pin needs to be centered so it slides into the connector and fully
  inserts into the SHV connector housing.
 \end_layout
