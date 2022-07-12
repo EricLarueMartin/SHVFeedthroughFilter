@@ -24,4 +24,4 @@ The cable ground of the recommended connector acts as a guard ring to reduce the
 
 This version includes a second capacitor stage with a pulse line. This allows pulsing through the HV line and also provides source termination at the filter, which can help reduce noise that is picked up on the HV line after the filter.
 
-![SHV to SHV Feedthrough Filter](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/pulse/SHVFeedthroughFilterWithPulseLine.png)
+![SHV to SHV Feedthrough Filter](https://github.com/EricLarueMartin/SHVFeedthroughFilter/blob/legend/SHVFeedthroughFilterLEGEND.png)

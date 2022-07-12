@@ -76,7 +76,7 @@
 \begin_body
 
 \begin_layout Title
-SHV coaxial feedthrough RCR filter
+SHV coaxial feed-through two stage RC filter with pulse line
 \end_layout
 
 \begin_layout Author
@@ -92,20 +92,17 @@ Triangle Universities Nuclear Laboratory, Durham, NC 27708, USA
 This filter is intended for use biasing germanium detectors for the LEGEND
  experiment, where the load current is expected to be < 1 nA and a large
  series resistance is acceptable.
- The final filter is a two stage RC filter with 100 MΩ resistances and 9.5
+ The final filter is a two stage RC filter with 100 MΩ resistances and 11.3
  nF capacitance to ground.
  The expected capacitance between input and output is around 0.01 pF.
  The filter is constructed to minimize radiation power transfer by keeping
- the input on the same axis as the output and keeping the ground current
- symmetric about the output axis so capacitor radiation is emitted perpendicular
- to the output axis and cancels.
+ the input on the same axis as the output and keeping the capacitors symmetric
+ about the output axis so capacitor radiation is emitted perpendicular to
+ the output axis and cancels.
  A pulse line connects to the final capacitor to allow applying a test pulse
  through the HV line and provide source termination to noise on the HV line.
  The entire filter is contained in a sealed tube that can be filled with
  oil and mounts with front-side nut bulkhead jacks.
- The SHV and BNC jacks use gasket seals and are suitable for use in an oil
- filled application.
- 
 \end_layout
 
 \begin_layout Part*
@@ -128,7 +125,7 @@ Parts:
 \end_layout
 
 \begin_layout Itemize
-6 2.7 nF 6 kV ceramic capacitors, Vishay Vitramon HV2225Y272KX6ATHV.
+6 3.3 nF 5 kV ceramic capacitors, Vishay Vitramon HV2225Y332KXMATHV.
 \end_layout
 
 \begin_layout Itemize
@@ -141,7 +138,7 @@ Parts:
 \end_layout
 
 \begin_layout Itemize
-1 M4 brass standoff in 6 mm hex, 5 or 6 mm length.
+1 M4 brass standoff in 6 mm hex, 5-6 mm length.
 \end_layout
 
 \begin_layout Itemize
@@ -150,21 +147,11 @@ Parts:
 
 \begin_layout Itemize
 Epoxy, Loctite Hysol EA 0151.
-\begin_inset Foot
-status open
-
-\begin_layout Enumerate
-The epoxy needs to be able to withstand high enough temperature to solder
- the SHV jack housing with the pin installed, this will heat the epoxy to
- somewhere around 200 C for a few minutes depending on the solder used.
- Most epoxies can handle such temperature for a short time.
- The epoxy should also be able to handle short term exposure to isopropyl
- alcohol and long term exposure to silicone oil.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Conductive Epoxy, MG Chemicals 8330S.
+ (optional)
 \end_layout
 
 \begin_layout Itemize
@@ -181,6 +168,7 @@ Section of wire braid to shield the output cable.
 
 \begin_layout Itemize
 Section of heat shrink to cover shield braid.
+ (optional)
 \end_layout
 
 \begin_layout Itemize
@@ -192,15 +180,23 @@ Capacitor jig, printed part.
 \end_layout
 
 \begin_layout Itemize
-Capacitor positioning jig, printed part.
-\end_layout
-
-\begin_layout Itemize
 Resistor positioning jig, printed part.
 \end_layout
 
 \begin_layout Itemize
-Pulser capacitors jig, printed part.
+Jig stand, printed part
+\end_layout
+
+\begin_layout Itemize
+Ground break insulator, printed part
+\end_layout
+
+\begin_layout Itemize
+End cap, printed part.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part*
@@ -208,39 +204,15 @@ Assembly
 \end_layout
 
 \begin_layout Section
-Assemble the input resistor and SHV jack
+Assembly the Tube
 \end_layout
 
 \begin_layout Subsection
-Prepare the SHV bulkhead jack
-\end_layout
-
-\begin_layout Standard
-The nickel plating on the SHV jack body is difficult to solder to while
- the underlying brass is far easier.
- It is a thin layer and will take little effort to remove.
+Cut and drill tube
 \end_layout
 
 \begin_layout Enumerate
-Tape over the opening in the SHV jack body to prevent any metal from getting
- into the connector.
- Stray bits of metal can cause discharge problems later.
-\end_layout
-
-\begin_layout Enumerate
-Remove the nickel layer around the largest diameter surface of the SHV jack
- body with a file, this is where the tube will later be soldered.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SHVjackPlating"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+Measure a 61 mm section of tube with the jig and cut with a tube cutter.
 \begin_inset Float figure
 placement H
 wide false
@@ -248,12 +220,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename SHVJackNickelRemoved.jpg
+	filename MeasureTubeWithJig.jpg
 	lyxscale 20
-	width 2in
-	rotateAngle -90
-	rotateOrigin center
+	width 90col%
 
 \end_inset
 
@@ -263,12 +234,74 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:SHVjackPlating"
+name "fig:MeasureTubeWithJig"
 
 \end_inset
 
-All nickel from surface to be soldered removed, also showing the dust of
- all the material that was removed.
+Tube jig used to measure the proper length of tube.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use the jig to drill holes in the tube.
+ The small holes are 1/16
+\begin_inset Quotes erd
+\end_inset
+
+ and the large holes are 3/32 
+\begin_inset Quotes eld
+\end_inset
+
+.
+ The large hole is just for ventilation and cleaning.
+ The tube is symmetric except for these larger holes.
+ One large hole on each end of the tube is recommended.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename TubeHolesWithJig.jpg
+	lyxscale 20
+	height 4cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename TubeWithHolesHalfJig.jpg
+	lyxscale 20
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TubeHolesWithJig"
+
+\end_inset
+
+Tube in jig for drilled hole placement.
 \end_layout
 
 \end_inset
@@ -286,97 +319,428 @@ All nickel from surface to be soldered removed, also showing the dust of
 \end_layout
 
 \begin_layout Enumerate
-(Optional) Tin the uncoated surface of the SHV jack body to ease making
- a good solder connection with the tube later.
+Bore out the inside of the tube on a lathe to fit the pulser PCB.
+ It should be bored 1/16 inch deep, so the PCB slides into the tube until
+ it is flush with the tube end, and wide enough the PCB easily slides in.
+ Do not make this a snug fit or the capacitors may get damaged when installing
+ the PCB later.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename BoredTube.jpg
+	lyxscale 20
+	height 5.4cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename PCBTooShallow.jpg
+	lyxscale 20
+	height 5.4cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename PCBTestFit.jpg
+	lyxscale 20
+	height 5.4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PCBTestFit"
+
+\end_inset
+
+Test fitting the PCB in a bored out tube.
 \end_layout
 
-\begin_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
-Use a tip that will provide good heat transfer and set the soldering iron
- to it's highest temperature.
+Deburr the inside of the tube with a rat-tail file and sand paper.
+ If there are any burs the capacitors may catch later.
 \end_layout
 
 \begin_layout Enumerate
-The entire SHV jack body will be heated to near the solder melting temperature,
- use something that doesn't conduct heat well to manipulate it, like a bunch
- of paper towels.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Apply a small blob of solder to the uncoated surface of the SHV jack body.
+Place a copper washer on a flat head M4 bolt and tighten it against the
+ head with a nut.
+ Use a drill and file to turn the washer down until it slides into the tube.
 \end_layout
 
 \begin_layout Enumerate
-Spread the blob of solder around the surface until it covers the entire
- surface where the nickel was removed.
+Put another washer on the end of the bolt sandwiched between two nuts.
+ Position the washer so when it is inserted in the bored out portion of
+ the tube the turned down washer is centered on the holes in the tube.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename WasherJig.jpg
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WasherJig"
+
+\end_inset
+
+Copper washer and M4 nuts and bolt used as washer position jig.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-Remove any excess solder with fluxed solder wick.
+Solder the washer into the tube.
+ Be careful to handle the tube with a hot pad or some other thermal insulator
+ — it will get very hot.
+ Make sure there are no gaps in the holes in case it is later decided to
+ fill the filter with oil.
 \end_layout
 
-\end_deeper
-\end_deeper
+\begin_layout Section
+Assemble the filter internals
+\end_layout
+
+\begin_layout Subsection
+Assembly the first stage capacitor array
+\end_layout
+
+\begin_layout Enumerate
+Place three 3.3 nF and 3 470 pF capacitors and M4 standoff in the jig.
+ Evenly distribute the capacitors so the values are alternating around the
+ array, the slots in the jig are of different size for the different capacitors
+ as well.
+ Gently tighten the bolts to press the capacitors firmly against the standoff,
+ but do not over tighten or the bolts will damage the fragile ceramic capacitors.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename CapacitorJig.jpg
+	lyxscale 20
+	width 60col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CapacitorJig"
+
+\end_inset
+
+Capacitors in jig around an M4 standoff.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solder the capacitors to the standoff.
+ If the standoff fills with solder it will be a minor inconvenience later,
+ but excessive solder can lead to high voltage breakdowns.
+\end_layout
+
+\begin_layout Subsection
+Attach input resistor to capacitor array
+\end_layout
+
+\begin_layout Enumerate
+Select an input resistor and test fit the resistor to ensure it can easily
+ slide into the SHV jack bulkhead connector.
+ Due to manufacturing tolerances on the epoxy coating not all resistors
+ will fit in the connector.
+ If a resistor doesn't fit try the other end or use it for the output resistor
+ instead.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ResistorNotFit.jpg
+	lyxscale 15
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ResistorFits.jpg
+	lyxscale 25
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ResistorTestFit"
+
+\end_inset
+
+Resistor fit test.
+\begin_inset Newline newline
+\end_inset
+
+Top: Resistor doesn't fit into connector.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Bottom: Resistor slides into connector.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Trim the lead on the input resistor that connects to the capacitor array
+ down to 
+\begin_inset Formula $\sim$
+\end_inset
+
+ 4 mm, leave the end that inserts into the SHV connector long for now.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Optional:
+\emph default
+ Wrap Kapton tape around the mid section of the input resistor to provide
+ additional insulation when inserted into the connector.
+ Do not wrap around the bulge at the end of the resistor or it won't fit
+ into the connector.
+ The resistor epoxy should be sufficient to prevent discharges without this
+ additional tape.
+\end_layout
+
+\begin_layout Enumerate
+Assembly the resistor and capacitor jig with the input resistor lead that
+ fits into the connector up.
+ If the standoff was shorter than the width of the resistors, so that only
+ one end is flush with the resistors, put the flush end up towards the input
+ resistor.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solder the input resistor to the capacitor array, gently push the resistor
+ down so it is flush with the standoff in the center of the array.
+\end_layout
+
+\begin_layout Enumerate
+Bend the lead that goes into the connector into a spring to keep the resistor
+ held in place when the jig is inverted.
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ResistorInJig"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Select and trim one lead of the output resistor down to 4 mm and insert
+ it in the jig.
+\end_layout
+
+\begin_layout Enumerate
+Turn the jig over and insert the output resistor.
+\end_layout
+
+\begin_layout Enumerate
+Solder the output resistor to the capacitor array.
+ If the resistor was too large for the connect it may not fit well into
+ the jig.
+ If this results in a significant misalignment use a jig with a larger hole.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename InputResistorInJig.jpg
+	lyxscale 20
+	height 9cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename OutputResistorInJig.jpg
+	lyxscale 20
+	height 9cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ResistorInJig"
+
+\end_inset
+
+Attaching resistors using jig.
+ Left: Input resistor in jig for attaching to capacitor array.
+ Shown after soldering with lead bent into spring shape.
+\begin_inset Newline newline
+\end_inset
+
+Right: Output resistor in jig.
+ Note the upper part of the jig doesn't quite rest flat against the rest
+ of the jig because the resistor end doesn't quite fit the jig, but it's
+ close enough.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Install SHV pin on resistor
 \end_layout
 
 \begin_layout Enumerate
-Check that the resistor end which will have the pin fits freely in the connector
-, for the Ohmite MOX1125231006FE resistors most easily fit in the connect,
- but one was found that wouldn't fit without being sanded down.
- It needs to have enough of a gap for a thin sheet of Kapton.
- If one end doesn't fit try the other end or a different resistor (some
- resistors are a little thicker than others) and use the wide resistor for
- the second stage of the filter.
- If no resistors fit the bulge can be sanded down to be even with the rest
- of the resistor.
+Cut the fit tested lead of the resistor down to 6 mm, trim length for TE
+ Connectivity AMP Connectors 5225059-3.
 \end_layout
 
 \begin_layout Enumerate
-Cut the fit tested lead of the resistor down to the central conductor length
- in the connector trim recommendations, 6 mm for TE Connectivity AMP Connectors
- 5225059-3.
+Put some solder flux on the resistor lead with the flux pen and solder a
+ blob of solder to the resistor lead.
 \end_layout
 
 \begin_layout Enumerate
-Solder the pin on the lead.
-\end_layout
-
-\begin_deeper
-\begin_layout Subsubsection*
-See figure for 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:PinSoldering"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- soldering the pin on the resistor.
-\end_layout
-
-\begin_layout Enumerate
-Apply solder to the lead.
- There should be enough solder that will fill the gap in the pin sufficient
- for electrical contact and mechanical strength but not so much that it
- will later ooze out the hole in the pin.
-\end_layout
-
-\begin_layout Enumerate
-Heat the pin with the lead held against the opening of the pin until the
- solder melts and the lead slides into the pin.
- No solder should flow out the escape hole in the pin but if it does wick
- it away to prevent difficulty when inserting the pin into the connector
- later.
-\end_layout
-
-\begin_layout Enumerate
-Let the solder cool then ensure there is a good connection by gently pulling
- on the pin and resistor to be sure they doesn't come apart.
+Gently pushing the pin onto the resistor lead, heat the pin until the solder
+ melts and the pin slides fully onto the resistor lead.
+ Make sure no solder protrudes from the side of the pin further than the
+ widest feature of the pin.
 \begin_inset Float figure
 placement H
 wide false
@@ -384,10 +748,19 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename SHVPinInsertingResistor.jpg
+	filename PinInstallResistorSoldered.jpg
 	lyxscale 20
-	width 2in
+	height 3.4cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename PinOnResistor.jpg
+	lyxscale 20
+	height 3.4cm
 
 \end_inset
 
@@ -400,121 +773,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:PinSoldering"
+name "fig:PinOnResistor"
 
 \end_inset
 
-Soldering resistor into pin by heating SHV pin.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Subsection
-Install resistor and SHV pin in SHV jack.
-\end_layout
-
-\begin_layout Enumerate
-Assemble the parts in a clean room or wear gloves at a minimum.
- Any residual oil from hands can lead to excessive leakage currents on high
- voltage components.
- 
-\end_layout
-
-\begin_layout Enumerate
-Clean the SHV jack and the resistor with the SHV pin well with isopropyl
- alcohol.
-\end_layout
-
-\begin_layout Enumerate
-Prepare for epoxy application.
- If a centrifuge and/or vacuum chamber will be used make sure they are ready
- to go so the epoxy can be rapidly degassed and applied while it still flows
- easily.
- Read the rest of the instructions in this section ahead of time.
-\end_layout
-
-\begin_deeper
-\begin_layout Subsubsection*
-It is recommend to degassing the epoxy in a centrifuge to remove any bubbles
- that formed during mixing that could cause partial discharges.
-\end_layout
-
-\begin_layout Enumerate
-Fill a small syringe with the mixed epoxy, cap it, and place it dispenser
- side down in a disposable test tube.
- The tube is keep the centrifuge clean in the likely event some epoxy spills.
-\end_layout
-
-\begin_layout Enumerate
-Balance the centrifuge with an identical test tube and syringe filled with
- the same weight of water.
-\end_layout
-
-\begin_layout Enumerate
-Run the centrifuge at 1000 rpm for 3 minutes, too high and it will separate
- back out.
-\end_layout
-
-\begin_layout Enumerate
-Keep the syringe pointed down so the air bubble stays at the plunger until
- ready for application.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Hold the SHV pin and resistor pin side up so any epoxy that flows during
- application will coat the resistor and not the pin.
- Apply a small amount of epoxy to the region where the pin meets the resistor.
- It only needs to be enough to keep oil from leaking through the pin hole,
- it is not necessary to pot the connector with epoxy.
- Don't get any epoxy past the chamfered ridge a little further from the
- pin tip than center, that's the mating surface for the SHV connector.
-\end_layout
-
-\begin_layout Enumerate
-Fully insert the pin into the SHV jack then invert the SHV jack and set
- it pin side down while the epoxy cures, so the epoxy can flow around the
- pin and form a good seal.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-(Optional) Apply Kapton film between the resistor and connector for added
- electrical insulation and to center the resistor in the connector body.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename KaptonInsulator.jpg
-	lyxscale 10
-	width 2in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Resistor installed in bulkhead jack.
+Pin soldered to input resistor.
 \end_layout
 
 \end_inset
@@ -528,534 +791,21 @@ Resistor installed in bulkhead jack.
 \end_layout
 
 \begin_layout Section
-Assemble the first stage capacitors
+Install the filter in the the tube
 \end_layout
 
 \begin_layout Enumerate
-Place the capacitors and standoff in the jig.
- Lightly tighten the bolts to hold the capacitors in place.
- The spring in the plastic jig will push the capacitors fully against the
- standoff when soldering without requiring significant deflection.
- 
-\end_layout
-
-\begin_layout Enumerate
-Heat the standoff while applying additional solder to the capacitor to standoff
- joint until the solder flows.
- Then apply sufficient solder to fill the center of the standoff.
- Solder should flow along all the capacitors while spreading around the
- standoff.
- If available use a higher temperature solder than will be used to attach
- the capacitors to the tube later.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename CapacitorsSolderedInJig.jpg
-	lyxscale 30
-	height 3in
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Capacitors and standoff in jig after soldering, showing the solder flowed
- along the standoff to connect all along the capacitors and significent
- solder flux residue.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Assemble the pulser PCB and second stage capacitors
-\end_layout
-
-\begin_layout Enumerate
-Place a flathead bolt through the puler board from the cable side and lay
- it down on a table with capacitor side facing up.
-\end_layout
-
-\begin_layout Enumerate
-Place the capacitors on the PCB and use the pulser board capacitor jig to
- position them.
- Hold the jig down with a nut and tighten the bolt enough to keep the capacitors
- in place.
-\end_layout
-
-\begin_layout Enumerate
-Make sure the capacitors are fully inserted in the jig and test fit the
- capacitors in the tube.
- The PCB doesn't need to fit yet, just the capacitors.
-\end_layout
-
-\begin_layout Enumerate
-Solder the capacitors to the outer ring of the pulser PCB to fix their position.
- If available used a higher temperature solder than will be used for the
- inner ring and the cable later.
-\end_layout
-
-\begin_layout Enumerate
-Remove the jig and solder the capacitors to the inner ring.
- Don't apply too much excess solder as the cable needs to go in this hole
- later.
- If available use a lower temperature solder than was used for the outer
- ring.
-\end_layout
-
-\begin_layout Section
-Preparing the tube
-\end_layout
-
-\begin_layout Enumerate
-Measure the section of tube using the tube jig and cut to length with tube
- cutter.
- 
-\end_layout
-
-\begin_layout Enumerate
-Place the cut tube in the jig and drill the 3/32
-\begin_inset Quotes erd
-\end_inset
-
- fill hole and 1/16
-\begin_inset Quotes erd
-\end_inset
-
- capacitor solder joint holes and guard ring holes.
- The 3/32
-\begin_inset Quotes erd
-\end_inset
-
- hole is on both sides of the jig and two rotations, but only one is necessary.
- The second rotation is so the hole can be used to rotate the jig 30 degrees
- to offset the guard ring holes from the capacitor holes if desired.
- All six capacitor holes are desired for six capacitor, if installing fewer
- capacitors then space the holes evenly about the tube.
- Only install a number of capacitors that can be spaced such that the radiation
- to the output from any current flowing radially through the capacitors
- will cancel.
- This allows two, three, four, or six capacitors but not one or five capacitors.
- 
-\end_layout
-
-\begin_layout Enumerate
-Test fit the SHV jack in the tube.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The tube should need to be bored out slightly.
- It is helpful to bore to the desired insertion depth so the connector easily
- inserts then stops in the desired position.
- The connector should be flush or slightly protruding from the tube so that
- the sealing ring can still be fully compressed.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:PrepareTube"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ConnectAndTubeTestFit.jpg
-	lyxscale 30
-	width 4cm
-	rotateOrigin center
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:PrepareTube"
-
-\end_inset
-
-Connector resting on shoulder in bored out tube.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Test fit the pulser PCB with capacitors.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The tube should need to be bored out slightly.
- It is helpful to bore to the desired insertion depth so the PCB easily
- inserts then stops in the desired position.
- The PCB should be flush with the tube but it isn't critical that it is
- either slightly recessed or protruding.
- 
-\end_layout
-
-\begin_layout Enumerate
-Check that the capacitors don't short to the tube by checking the resistance
- between the outer ring of the pulser PCB to the tube.
- If a piece of Kapton will be used to ensure the capacitors don't short
- to the tube be sure to test fit with the Kapton in place.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Test fit the first stage capacitors.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Take the capacitors out of the jig to test sliding them into position in
+Carefully slide the filter components into the tube.
+ The capacitors need to be rotated to align with the holes in the sides
+ of the tube.
+ If the capacitors don't easily slide into the tube then file down the tube
+ a little to create tracks for the capacitors.
+ Do not force the capacitors, they are brittle ceramic.
+ Use the jig to ensure the tip of the pin is 29.8 mm from the end of the
+ tube.The insertion of the capacitors will vary slightly depending on how
+ the connector pin and capacitor array attach to the resistor, but it shouldn't
+ shift enough that the capacitor pads aren't visible through the holes in
  the tube.
- 
-\end_layout
-
-\begin_layout Enumerate
-File any burs off the drill holes and file sufficient material from the
- sides of the tubes along the capacitor insertion route that the capacitors
- can slide easily into the tube from the connector end without catching.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:TestFitCapactiors"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename CapacitorsTestFit.jpg
-	lyxscale 10
-	width 4cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:TestFitCapactiors"
-
-\end_inset
-
-Test fit capactior array in tube.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Place the capacitors back in the jig to keep them assembled while soldering
- the resistors later.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Solder the guard ring washers into the tube.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Assembly the guard ring of one or more washers on a flat head bolt with
- a nut and washer to keep the washers well centered.
- Use stainless steel fasteners to prevent stray solder from sticking to
- the jig.
- Place the bolt in a drill and file the sides down enough that the washers
- easily slide into the tube from the output end.
-\end_layout
-
-\begin_layout Enumerate
-Place an unfiled washer between two nuts on the bolt to position the guard
- ring at the solder joint holes.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GuardRing"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename PositioningGuardRing.jpg
-	lyxscale 10
-	height 4cm
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename GuardRingInTube.jpg
-	lyxscale 10
-	height 4cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:GuardRing"
-
-\end_inset
-
-Left: Guard ring on positioning jig of stainless steel nuts and bolts.
- Right: Guard ring soldered into tube.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Solder the guard ring to the tube.
- If available use a higher melting point solder than will be used for attaching
- the capacitors and connector to the tube.
-\end_layout
-
-\begin_layout Enumerate
-(Optional) Solder the fill port nut onto the tube.
- This will be an oil seal so it needs to be completely sealed between the
- nut and the tube, but no solder should be on the other face of the nut
- as that will be a gasket seal surface.
- Any excess solder on the gasket surface should be wicked away and the surface
- polished with fine grain sand paper.
- Sand with a circular motion centered in the middle of the nut, so the grooves
- in the nut won't result in a leak across the gasket.
- The center threads of the nut need to be clear enough that a bolt can still
- be inserted, retap the threads if necessary.
-\end_layout
-
-\begin_layout Section
-Assemble the resistors and capacitors
-\end_layout
-
-\begin_layout Subsection
-Asemble the SHV jack, resistors, and capacitors
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Don't start this step unless the epoxy used to seal the SHV jack center
- pin is cured enough to handle.
-\end_layout
-
-\begin_layout Enumerate
-Trim the resistor leads that will go in the standoff down to less than the
- standoff length, leaving at least a couple millimeteres for a solder connection.
- The leads can be bent so they miss each other in the hole.
-\end_layout
-
-\begin_layout Enumerate
-Place the connector with resistor in the jig, the connector end will slide
- into a hole in the bottom of the jig when properly centered.See figure
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:FilterAssembly"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Place the capacitor array, in the capacitor jig, on the connector with resistor.
- If the standoff in the center of the capacitor array is too filled with
- solder it may be necessary to wick some of the solder out first.
-\end_layout
-
-\begin_layout Enumerate
-Place the resistor jig over the capacitor and connector jigs and insert
- the second stage resistor.
- If the second stage resistor doesn't fall into place yet that is fine,
- it will once the solder melts.
-\end_layout
-
-\begin_layout Enumerate
-Solder the resistor leads into the center of the standoff.
- 
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ConnectorInJig.jpg
-	lyxscale 10
-	height 4cm
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename RCTFitlerInJig.jpg
-	lyxscale 10
-	height 4cm
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename RCTfilter.jpg
-	lyxscale 10
-	height 4cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:FilterAssembly"
-
-\end_inset
-
-Left: Connector with resistor installed in jig.
- Center: Soldering capacitor array and resistors together with jig.
- Right: Assembled RC T-type filter portion of filter ready for insertion
- in tube.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Remove any solder flux.
-\end_layout
-
-\begin_layout Section
-Install the tube
-\end_layout
-
-\begin_layout Enumerate
-Slide the assembled portion of the filter into the tub.
- Ensure the capacitor pads are visable through the holes in the sides of
- the tube.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-(Optional) Place a roll of Kapton film in the guard ring as additional insulatio
-n around the second stage resistor.
- It should be trimmed to be short enough to not interfere with the capacitor
- array or pulser board, but long enough that it can't come out once the
- filter is assembled.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Heat the tube right next to the holes and feed solder into the hole until
- it flows in and joints the tube to the capacitor.
- Make sure the holes are filled, these are oil boundries.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SolderingFilterInTube"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
 \begin_inset Float figure
 placement H
 wide false
@@ -1063,10 +813,65 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PinPosition.jpg
+	lyxscale 20
+	width 90col%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PinPosition"
+
+\end_inset
+
+Distance of pin from end of tube measured with calipers.
+ The position of the pin should be ensured using the jig.
+ The rotation of the capacitors must be such that they can be soldered to
+ the tube through the holes in tube, but the exact insertion of the capacitors
+ in the tube isn't important.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solder the capacitors to the tube.
+ Be careful to handle the tube with a hot pad or some other thermal insulator
+ — it will get very hot.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename FinalCapacitorSoldering.jpg
 	lyxscale 30
-	height 2in
+	width 90col%
 
 \end_inset
 
@@ -1094,8 +899,243 @@ Soldering the capacitors to the tube.
 \end_layout
 
 \begin_layout Enumerate
-Solder the SHV jack to the tube.
- Ensure there are no gaps as this is an oil seal.
+
+\emph on
+Optional:
+\emph default
+ Solder M2 nuts to the ventilation and cleaning holes in the tube to allow
+ sealing the filter with an M2 bolt and gasket if it is to be filled with
+ oil.
+\end_layout
+
+\begin_layout Enumerate
+Thoroughly clean the filter and tube assembly with flux remover and IPA.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename TubeCapacitorEnd.jpg
+	lyxscale 40
+	height 5.4cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename TubeWasherEnd.jpg
+	lyxscale 40
+	height 5.4cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:InnerFilterInTube"
+
+\end_inset
+
+Inner parts of filter assembled in tube.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Left: SHV connector end view.
+ Right: output end view.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Assemble the pulser PCB 
+\end_layout
+
+\begin_layout Enumerate
+Carefully solder three 470 pF and three 3.3 nF capacitors to the pulser PCB.
+ Arrange the capacitors so they alternate values around the array.
+ The capacitors shouldn't go over the hole in the center of the PCB, but
+ can get arbitrarily close.
+ The capacitors should be kept away from the sides so they just go on the
+ pads, to keep as far from the tube wall as possible to avoid shorts.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename CapacitorsOnPulserPCB.jpg
+	lyxscale 20
+	width 60col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CapacitorsOnPulserPCB"
+
+\end_inset
+
+Capacitors on pulser PCB.
+ Note that the pads of these capacitors are damaged on one corner.
+ This was caused by soldering down one end and then lifting on the capacitors,
+ which easily broke.
+ This particular filter board will not be used for high voltage.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solder a lead of a 1 MΩ resistor and the pulser line to the PCB.
+ The cable and resistor connections must be 180 degrees apart.
+ It may be easier to feed the end of the cable through the filter end cap
+ first.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Clean the PCB with flux remover and IPA.
+\end_layout
+
+\begin_layout Section
+Install the SHV connector
+\end_layout
+
+\begin_layout Subsection
+Install the ground break insulator on the SHV connector
+\end_layout
+
+\begin_layout Enumerate
+File down a bit of the SHV connector to solder the resistor to the connector.
+\end_layout
+
+\begin_layout Enumerate
+Solder one lead of the ground resistor to the connector, be sure there's
+ enough lead remaining that the resistor fits in place around the insulator
+ when installed.
+ The insulator can be rotated to take up slack so err on the side of longer.
+\end_layout
+
+\begin_layout Enumerate
+Slide the insulator section over the SHV connector and fold the resistor
+ over, rotate the insulator as necessary to get the resistor positioned
+ in a recess.
+\end_layout
+
+\begin_layout Enumerate
+Once a good position is determined epoxy the ground break insulator in place.
+ Hold the assembly connector side down so epoxy flows into the gaps around
+ the connector and tape around the joint to keep the epoxy from spilling
+ out.
+ Keep the assembly held tight as it cures and ensure it is well aligned
+ or the filter will be crooked when fully assembled.
+ The SHV connector assembly may be attached to the filter (next step) while
+ the epoxy is still workable to more easily notice and correct any alignment
+ problems.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename SHVConnectorInstalled.jpg
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "SHVConnectorInstalled"
+
+\end_inset
+
+SHV connector, ground resistor, and ground insulator installed on filter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Attach the SHV connector assembly to the filter.
+\end_layout
+
+\begin_layout Enumerate
+Apply epoxy to the SHV pin around the joint with the resistor.
+ Make sure no epoxy gets on the contact area of the pin for mating with
+ a socket connector.
+ There is a small barb-like ring around the connector that keeps it from
+ pulling out of the connector, no epoxy should go past that.
+ Keep the pin, resistor, and capacitor assembly oriented pin up, until inserted
+ into the connector, to prevent epoxy from flowing along the pin towards
+ the contact portion.
+\end_layout
+
+\begin_layout Enumerate
+Apply epoxy to the ground break insulator and insert it into the filter
+ tube.
+ The SHV pin needs to be centered so it slides into the connector and fully
+ inserts into the SHV connector housing.
+\end_layout
+
+\begin_layout Enumerate
+Keep the assembly oriented connector end down while the epoxy cures.
 \end_layout
 
 \begin_layout Section
@@ -1103,114 +1143,117 @@ Install the pulser board and HV cable
 \end_layout
 
 \begin_layout Enumerate
-Trim the second stage resistor lead so it reaches the middle of the puler
- PCB capacitor array when inserted.
+Trim the second stage resistor lead so it reaches the middle of the pulser
+ PCB capacitor array when inserted, this should be 3/16 inch from the end
+ of the tube.
  Tin the lead.
 \end_layout
 
 \begin_layout Enumerate
-(Optional) Place a layer of Kapton tape in the end of the tube, long enough
- to insulate the second stage capacitors from the tube when fully inserted
- against the guard ring.
+Place a layer of Kapton tape in the end of the tube, long enough to insulate
+ the second stage capacitors from the tube when fully inserted against the
+ guard ring.
+ 18 mm should work.
+ There doesn't need to be an overlap in this strip, it prevents shorts between
+ ground potentials, it doesn't stand-off high-voltage.
+\end_layout
+
+\begin_layout Enumerate
+Roll of a piece of Kapton and insert it around the resistor.
+ It should be long enough that it covers the guard ring when pushed against
+ either the first stage capacitor array or the pulser PCB once installed,
+ but doesn't interfere with installing the pulser PCB.
+ 25 mm should be acceptable.
+\end_layout
+
+\begin_layout Enumerate
+Push the end of the LEGEND cable through the pusler end cap and form a hole
+ in the middle of the end of the LEGEND cable for the output resistor lead.
+ Leave a gap between the pulser board and the end cap for heating the LEGEND
+ cable.
+\end_layout
+
+\begin_layout Enumerate
+Center the output resistor in the filter, use another PCB to assist in determini
+ng the center if necessary and insert pulser board, end cap, resistor, and
+ cables assembly into the tube.
+ The end of the output resistor should insert into the hole in the end of
+ the LEGEND cable.
+\end_layout
+
+\begin_layout Enumerate
+Solder the LEGEND cable end into the pulser PCB and to the output resistor.
+ A small gap between the PCB and the cable insulation will be required to
+ apply heat.
+ The cable jacket can be slid up along the cable to expose more wire then
+ slid back down after the joint is made.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PulserBoardInstalled.jpg
+	lyxscale 20
+	width 60col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PulserBoardInstalled"
+
+\end_inset
+
+Pulser board with resistor, pulser line, LEGEND HV cable, and end cap installed.
+ The end cap is not yet slide down into place.
+ Old version of end cap shown where resistor hole is same as cable hole.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Gently tug on the assembly to make sure it is connected to the output resistor.
  
 \end_layout
 
 \begin_layout Enumerate
-Slide the pulse PCB into the end of the tube.
- Ensure the capacitors aren't shorted to the tube by checking the resistance
- between the outer ring on the PCB and the tube.
-\end_layout
-
-\begin_layout Enumerate
-Slide the HV cable through the end cap.
- If there's no connector on the HV cable this can be done later.
-\end_layout
-
-\begin_layout Enumerate
-Time and shape the end of the HV cable.
- It needs to be short enough that it won't protrude past the capacitors,
- narrow enough it can go into the center hole of the puler PCB, and spread
- the wires to form a hole in the middle for the second stage resistor lead.
- 
-\end_layout
-
-\begin_layout Enumerate
-Solder the cable end into the pulser PCB.
- Try to insert it as fully as possible so the insulation is close to flush
- with the PCB.
-\end_layout
-
-\begin_layout Enumerate
-Ensure the cable is firmly attached to both the pulser PCB and the second
- stage resistor by gently tugging on the cable.
-\end_layout
-
-\begin_layout Section
-Install the pulse line and seal the cable connection
-\end_layout
-
-\begin_layout Enumerate
-Hold the filter connector end up and flow isopropyl alcohol in through the
- fill hole, letting it drain out the gap between the pulser PCB and tube.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-This is the last chance to clean the filter by flushing fluid through the
- filter.
- Unless an optional drain hole is added to the output end of the filter
- it can only be cleaned by filling and draining through the same hole, which
- won't be as effective, once the cable connection is sealed.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Trim the pulse line cable and feed it through the pulse line hole in the
- end cap.
- If there is no connector on the cable yet this can be done after soldering.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-The center conductor should extend from the dielectric by the width of the
- pulser PCB.
-\end_layout
-
-\begin_layout Enumerate
-The shield should be trimmed back at least a couple millimeters from the
- dielectric.
- The entire filter will later be enclosed in a shield so a large gap here
- is okay.
-\end_layout
-
-\begin_layout Enumerate
-Enough shield should be exposed so it can be fed through the cap and still
- make significant contact with the tube.
- Even complete removal of the jacket is okay.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Solder the pulse line to the pulser PCB.
- Check to ensure a short between the pulser board and tube didn't develop.
-\end_layout
-
-\begin_layout Enumerate
-Slide the end cap along the two cables until it is tight against the filter.
- Tape it into place, copper tape is recommended as it will provide some
- additional shielding but it just needs to keep the epoxy in place.
+Slide the end cap into place.
 \end_layout
 
 \begin_layout Enumerate
 Mix some epoxy and apply it generously through the fill hole in the end
  cap.
- It is recommended to degas the epoxy first to remove voids that could later
- cause discharges.
+ It is recommended to degas this epoxy first to remove voids that could
+ later cause discharges as it will be up against the HV cable.
 \end_layout
 
 \begin_layout Enumerate
-Hold the filter connector end up so the epoxy flows into the end cap and
- seals as it cures.
+Tape around the end of the filter to hold the end cap and PCB in place and
+ keep the filter connector end down while the epoxy cures.
 \end_layout
 
 \begin_layout Section
@@ -1218,53 +1261,36 @@ Finishing touches
 \end_layout
 
 \begin_layout Enumerate
-If not done before, install the BNC connector on the pulse line and the
- HVconnector on the HV line.
+Install the BNC connector on the pulse line.
 \end_layout
 
 \begin_layout Enumerate
-If the HV cable is unshielded then shield the cable with a foil shield.
+Install copper foil around the LEGEND HV cable.
+ Foil can also be used to minimize the gap in the shielding at the ground
+ break insulator and shield around the filter end cap.
+ Kapton tape cover the resistor lead can prevent undesired shorts allowing
+ the shield to be nearly complete.
 \end_layout
 
 \begin_layout Enumerate
-(Optional) Ensure a good electrical connection between the filter tube and
- exposed shield of the pulse line by connecting the two with low temperature
- solder or conductive epoxy.
+Install shield braid around the LEGEND cable covering the entire length
+ of the cable, including the connector, and extend up around to filter end
+ cap to contact the tube.
+ The braid can be bunched up to go around the filter tube and stretched
+ out to be snug around the LEGEND cable.
 \end_layout
 
 \begin_layout Enumerate
-Using 3/4
-\begin_inset Quotes erd
-\end_inset
-
- shield braid apply braid to cover the filter end cap and at least an additional
- inch of the filter tube and HV cable.
- It should expand enough to go over the filter tube with the pulse line
- cable.
- 
+Solder the ground wire with connector to the LEGEND connector end of the
+ shield braid.
 \end_layout
 
 \begin_layout Enumerate
-If the HV cable was unshielded extend the shield braid the length of the
- cable, it should narrow down enough to pull tight against the cable.
+Use cable ties to hold the resistor leads, pulser line shield, and LEGEND
+ cable shield tight against the tube.
+ Conductive epoxy can be used to ensure a solid electrical connection, soldering
+ would likely damage the ground break insulator or end cap.
 \end_layout
 
-\begin_layout Enumerate
-Enclose the shield braid with heat shrink.
- A high shrink ratio heat shrink may be required to fit over the tube portion
- and shrink down enough to be snug around the HV cable.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Double walled (adhesive lined) heat shrink is recommended, but use a strip
- of copper tape to ensure it doesn't interfere with good electrical connection
- between the filter tube and the exposed shield braid of the pulse line
- if a solid electrical connection wasn't ensured with low temperature solder
- or conductive epoxy.
-\end_layout
-
-\end_deeper
 \end_body
 \end_document
