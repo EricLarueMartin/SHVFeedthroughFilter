@@ -1895,6 +1895,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename PCBTapedOnNoEndCap.jpg
 	lyxscale 20
@@ -2029,7 +2033,7 @@ status open
 \begin_inset Graphics
 	filename InstallingEndCap.jpg
 	lyxscale 20
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -2037,7 +2041,7 @@ status open
 \begin_inset Graphics
 	filename TapedEndCap.jpg
 	lyxscale 20
-	height 5cm
+	height 4cm
 
 \end_inset
 
