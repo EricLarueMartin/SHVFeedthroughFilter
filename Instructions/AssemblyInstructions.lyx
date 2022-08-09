@@ -983,10 +983,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename CapacitorsBeforeSoldering.jpg
@@ -1025,33 +1021,60 @@ Capacitors in jig around an M4 standoff.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-Solder the capacitors to the standoff.
- If the standoff fills with solder it will be a minor inconvenience later,
- but excessive solder can lead to high voltage breakdowns.
+Press the capacitors and standoff down on a flat surface to get one side
+ of the capacitors flush with the standoff.
+ Press on the jig so the capacitors stick out of both sides slightly.
+ 
 \end_layout
 
+\begin_layout Enumerate
+Center the capacitors in their slots such that they aren't touching the
+ sides of the jig on either side, this will allow them to be easily removed
+ after soldering.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Solder the capacitors to the standoff.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Recommend starting on the side flush.
+\end_layout
+
+\begin_layout Enumerate
+Apply some liquid flux so it flows across the face of the standoff and down
+ the sides.
+\end_layout
+
+\begin_layout Enumerate
+Heat the nut and apply solder to all the capacitor to standoff joints, allowing
+ solder to flow down the sides of the standoff.
+\end_layout
+
+\begin_layout Enumerate
+Flip the jig over and if done properly enough solder will have flowed along
+ the capacitor to standoff joint that the joint is already soldered on the
+ other end as well.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
-Attach resistors to capacitor array
+Install SHV pin on resistor
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Warning: Be careful handling the capacitor array after the first application
- of heat, it will remain hot for quite some time.
- Be carefuly handling the assembled capacitors and resistors, too much stress
- on the resistors can easily break the leads once attached with a zero length
- solder joint.
+This can be done before or after attaching the resistors to the capacitor
+ array.
+ Doing it before is recommended.
 \end_layout
 
 \begin_layout Enumerate
@@ -1067,10 +1090,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1129,13 +1148,96 @@ Bottom: Resistor slides into connector.
 \end_layout
 
 \begin_layout Enumerate
-Trim the lead on the input resistor that connects to the capacitor array
+Cut the fit tested lead of the resistor down to 6 mm, trim length for TE
+ Connectivity AMP Connectors 5225059-3.
+\end_layout
+
+\begin_layout Enumerate
+Put some solder flux on the resistor lead with the flux pen and solder a
+ blob of solder to the resistor lead.
+\end_layout
+
+\begin_layout Enumerate
+Gently pushing the pin onto the resistor lead, heat the pin until the solder
+ melts and the pin slides fully onto the resistor lead.
+ Make sure no solder protrudes from the side of the pin further than the
+ widest feature of the pin.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename InstallingSHVPin.jpg
+	lyxscale 50
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PinOnResistor"
+
+\end_inset
+
+Soldering pin to input resistor.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Attach resistors to capacitor array
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Warning: Be careful handling the capacitor array after the first application
+ of heat, it will remain hot for quite some time.
+ Be carefuly handling the assembled capacitors and resistors, too much stress
+ on the resistors can easily break the leads once attached with a zero length
+ solder joint.
+\end_layout
+
+\begin_layout Enumerate
+Trim the lead on the resistors that will connect to the capacitor array
  down to 
 \begin_inset Formula $\sim$
 \end_inset
 
- 4 mm, leave the end that inserts into the SHV connector long for now.
+ 6 mm.
  Bend a loop into the trimmed lead so it easily holds a solder ball.
+ Make sure the resistor that will be used for the SHV connector end can
+ fit in the connector.
+ See figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ResistorTestFit"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \begin_inset Float figure
 wide false
 sideways false
@@ -1200,27 +1302,17 @@ Optional:
 
 \begin_layout Enumerate
 Solder one resistor to the capacitor array, gently push the resistor down
- so it is flush with the standoff in the center of the array.
- If the standoff was shorter than the width of the resistors, so that only
- one end is flush with the resistors, put the flush end up towards the input
- resistor.
+ so it is almost flush with the standoff in the center of the array, leaving
+ a little bit of room so it can be tilted.
+ Put the flush end up towards the input resistor.
  Use the resistor jig to ensure it can be centered.
  It is possible to solder the resistor to the capacitors array while installed
  in the jig, just more difficult and if the resistor is installed carefully
  it should be well enough centered without the jig.
- Bend the other lead into a spring to keep the resistor held in place when
- the jig is inverted.
- See figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:ResistorInJig"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
+ Bend the other lead into a spring, this keep the resistor pushed against
+ the standoff when the jig is inverted.
+ If the input resistor already has a pin installed then the output resistor
+ must be done first so the spring can be formed.
 \begin_inset Float figure
 placement H
 wide false
@@ -1283,15 +1375,16 @@ Installing input resistor on capacitor array.
 Turn the jig over and place it on the resistor jig stand.
  Solder the second resistor to the capacitor array and check that it is
  centered afterwards with the jig.
+ There are two jig versions, one with a 4.0 mm hole and one with a 4.4 mm
+ hole.
+ The 4.4 mm hole may be required depending on the epoxy coating shape on
+ the resistor.
+ 
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1322,10 +1415,7 @@ Checking the alignment of the second resistor with the resistor jig.
 \end_layout
 
 \begin_layout Enumerate
-Remove the nylon bolts and submerge the resistor and capacitor assembly
- in IPA.
- This will cool the array and make it easier to remove the capacitors from
- the jig.
+Loosen the nylon bolts.
  If the capacitor array doesn't easily come out of the jig do not attempt
  to apply significant force with the resistors or they will break.
  Use the capacitor array removal tool to gently push the capacitor array
@@ -1333,7 +1423,9 @@ Remove the nylon bolts and submerge the resistor and capacitor assembly
  The jig has narrow and wide portions to match the narrow and wide resistors.
  Push from the side flush with the capacitors so if the capacitors are crooked
  they are assured to fit through the jig.
- The leads can be trimmed down to as little as 6mm if they are in the way.
+ Use both resistor jigs to get enough height to remove the resistors without
+ hitting the table.
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -1383,68 +1475,16 @@ Removing capacitor array from jig using removal tool.
 \end_layout
 
 \begin_layout Enumerate
+Remove the nylon bolts and place the jig and bolts in IPA to remove solder
+ flux.
+ The bolts will start to stick in the jig if it is not cleaned after every
+ use.
+ 
+\end_layout
+
+\begin_layout Enumerate
 Remove the Kapton tape and inspect the capacitors for any signs of damage
  under a microscope.
-\end_layout
-
-\begin_layout Subsection
-Install SHV pin on resistor
-\end_layout
-
-\begin_layout Enumerate
-Cut the fit tested lead of the resistor down to 6 mm, trim length for TE
- Connectivity AMP Connectors 5225059-3.
-\end_layout
-
-\begin_layout Enumerate
-Put some solder flux on the resistor lead with the flux pen and solder a
- blob of solder to the resistor lead.
-\end_layout
-
-\begin_layout Enumerate
-Gently pushing the pin onto the resistor lead, heat the pin until the solder
- melts and the pin slides fully onto the resistor lead.
- Make sure no solder protrudes from the side of the pin further than the
- widest feature of the pin.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename InstallingSHVPin.jpg
-	lyxscale 50
-	width 90col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:PinOnResistor"
-
-\end_inset
-
-Soldering pin to input resistor.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -1670,7 +1710,7 @@ Soldering HV cable to PCB.
 \end_layout
 
 \begin_layout Section
-Install the ground isolation resistor
+Install the ground on the SHV connector
 \end_layout
 
 \begin_layout Enumerate
@@ -1726,6 +1766,14 @@ Soldering ground isolation resistor to SHV connector body.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Allow the connector to cool then install the electric break on the SHV connector.
+ Rotate so the resistor goes through one of the notches in the connector
+ side and is fully contained in one of the recesses.
+ Ensure the electric break is fully installed on the connector.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1963,13 +2011,15 @@ Remove the jig and solder the capacitors to the tube.
 \end_layout
 
 \begin_layout Section
-Clean and inspect
+Clean 
 \end_layout
 
 \begin_layout Enumerate
 Clean the SHV connector and filter with internals thoroughly with IPA.
  There is no more soldering after this and this is the perfect time to make
  sure everything is clean.
+ If the endcap is made of PETG acetone can be used, but it will damage PLA.
+ Short exposure to acetone will be fine and may help remove solder flux.
  
 \begin_inset Float figure
 placement H
@@ -2006,11 +2056,6 @@ Filter taking an IPA bath before final assembly.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Enumerate
-Look in the end of the tube to ensure the capacitor solder joints to the
- tube are good.
 \end_layout
 
 \begin_layout Section
@@ -2076,14 +2121,59 @@ Tape the end cap to the tube.
 \end_layout
 
 \begin_layout Section
-Attach the SHV connector assembly to the filter
+Inspect
+\end_layout
+
+\begin_layout Standard
+This is the last chance to make sure there are no problems before applying
+ epoxy.
+ Disassembly for repair will be difficult after application of epoxy.
 \end_layout
 
 \begin_layout Enumerate
-Install the electric break on the SHV connector.
- Rotate so the resistor goes through one of the notches in the connector
- side and is fully contained in one of the recesses.
- Ensure the electric break is fully installed on the connector.
+Look in the end of the tube to ensure the capacitor solder joints to the
+ tube are good.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Test the electrical connections.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Between pulse line center conductor and tube should be 51 ohms.
+ This ensures the connection between pulse line to pulser PCB, pulser PCB
+ to 51 ohm resistor, and resistor to tube.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Check the pulse line shield is shorted to the tube.
+\end_layout
+
+\begin_layout Enumerate
+Check capacitance between output and tube is about 11.3 nF.
+ To connect to the output do not force a multimeter probe into the connector
+ or it may rip.
+ Use a short piece of metal like a hex wrench.
+\end_layout
+
+\begin_layout Enumerate
+Check capacitance between the standoff in the middle of the capacitor array
+ and tube is about 11.3 nF.
+ If the electrical connections are clearly good on visual inspection this
+ isn't necessary.
+\end_layout
+
+\begin_layout Enumerate
+Check resistance between SHV pin and output is 200 MΩ, many multimeters
+ can't go up to this high a resistance.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Attach the SHV connector assembly to the filter
 \end_layout
 
 \begin_layout Enumerate
@@ -2144,6 +2234,13 @@ Epoxied SHV connector and ground isolation electric break installed on tube.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Check the series resistance again from SHV pin to filter output, it should
+ be 200 MΩ.
+ This checks if something was broken when the connector was installed and
+ gives a chance to take it apart before the epoxy cures.
 \end_layout
 
 \begin_layout Enumerate
