@@ -1660,16 +1660,12 @@ Trim the HV cable end so the conductor goes through the hole in the PCB
  resistor lead later.
  Feed the cable through the hole and spread the conductor strands out so
  they will solder bridge to the capacitors.
- Solder the HV cable to the pulser PCB.
+ Solder the HV cable to the pulser PCB with high temperature solder.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1700,13 +1696,18 @@ Soldering HV cable to PCB.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Optional
+\shape default
+: Add a strip of Kapton tape around the capacitors to avoid shorting the
+ capacitors to the side of the tube later.
 \end_layout
 
 \begin_layout Section
@@ -1901,37 +1902,18 @@ Soldering the output resistor to the pulser PCB.
 Remove the jigs and carefully slide the filter components into the tube.
  The capacitors need to be rotated to align with the holes in the sides
  of the tube.
- Use the longer pin jig to ensure the tip of the pin is 29.8 mm from the
- end of the tube.
+ Use the longer pin jig to position the tip of the pin 29.8 mm from the end
+ of the tube.
  The pin should protrude 1 mm through the hole in the jig.
  Tape the pulser PCB in place with electrical tape, this is to ensure the
  capacitors stay put as they are soldered to the tube.
  Do not try to install the end cap at this time, it will melt when soldering
  the capacitors in place.
- It is a good idea to check continuity on the pulser line and ground resistor,
- it will be difficult to correct problems once the capacitors are soldered
- to the middle of the tube.
- The center conductor of the pulse line should measure 51 ohms to the resistor
- lead and there should be an open between the pulse line or resistor to
- the tube wall.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename PinPosition.jpg
-	lyxscale 10
-	width 90col%
-	rotateAngle 90
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -1963,16 +1945,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:PinPosition"
+name "fig:PinPositioningJig"
 
 \end_inset
 
-Top: distance of pin from end of tube measured with calipers.
- 
-\begin_inset Newline newline
-\end_inset
-
-Middle: the position of the pin should be ensured using the jig.
+Top: the position of the pin should be ensured using the jig.
  The rotation of the capacitors must be such that they can be soldered to
  the tube through the holes in tube, but the exact insertion of the capacitors
  in the tube isn't important and may vary slightly depending on the length
@@ -1995,6 +1972,18 @@ Bottom: PCB taped in place to mitigate shifting of capacitor array.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Check continuity on the pulser line and ground resistor, it will be difficult
+ to correct problems once the capacitors are soldered to the middle of the
+ tube.
+ The center conductor of the pulse line should measure 51 ohms to the resistor
+ lead and there should be an open between the pulse line or resistor to
+ the tube wall.
+ In the highly probable event of a short to the tube put a piece of Kapton
+ tape around the resistors to separate them from the tube wall.
+ There's no harm in adding the Kapton anyway, just in case.
 \end_layout
 
 \begin_layout Enumerate
@@ -2114,10 +2103,20 @@ Right: end cap taped in position, covering ground resistor and hold resistor
 \end_layout
 
 \begin_layout Enumerate
+
+\shape italic
+Optional
+\shape default
+: Apply conductive epoxy to the pulse line shield and ground resistor to
+ ensure good electrical connection to the tube.
+ Do not attempt to solder these to the tube, the plastic end cap will melt.
+\end_layout
+
+\begin_layout Enumerate
 Tape the end cap to the tube.
  Ensure the pulse line shield and ground resistor lead make good contact
  with the tube before applying tape.
- Optionally with conductive epoxy.
+ 
 \end_layout
 
 \begin_layout Section
@@ -2177,6 +2176,124 @@ Attach the SHV connector assembly to the filter
 \end_layout
 
 \begin_layout Enumerate
+Check pin insertion depth.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Check the pin protrusion from the end of the tube.
+ The ground break insulator is designed for a 29.8 mm protrusion to fully
+ insert the pin in the connector and the pin positioning jig should result
+ in the pin being close to this value.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PinPosition.jpg
+	lyxscale 10
+	width 90col%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PinPosition"
+
+\end_inset
+
+Nominal distance of pin from end of tube measured with calipers.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Place the connector with ground insulator on the end of another piece of
+ tube and check to distance from the end of the tube to the end of the connector.
+ 
+\end_layout
+
+\begin_layout Enumerate
+MIL-STD-348B specifies the allowable pin position.
+ Measure the depth of the dielectric in the connector and use the measurements
+ of the pin and end of connector from the end of the tube to determine if
+ the pin will fall in the acceptable range.
+ Pin depth in dielectric = connector end distance from tube - pin distance
+ from tube - depth of dielectric from connector end, which must be between
+ 4.78 mm and 5.28 mm (S in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MIL-STD-348B_CHG-3-page-89."
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ If the pin position falls outside this range print a ground isolation electric
+ break with a different length to adjust the pin position.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MIL-STD-348B_CHG-3p89.pdf
+	width 90col%
+	BoundingBox 70bp 410bp 540bp 700bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MIL-STD-348B_CHG-3-page-89."
+
+\end_inset
+
+MIL-STD-348B_CHG-3 page 89.
+ S = 4.78-5.28 mm, T = 1.55-1.98 mm.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Apply epoxy to the SHV pin around the joint with the resistor.
  Make sure no epoxy gets on the contact area of the pin for mating with
  a socket connector.
@@ -2201,6 +2318,11 @@ Generously apply epoxy to the area between ground break insulator and connector.
 Insert the ground break insulator with SHV connector into the filter tube.
  The SHV pin needs to be centered so it slides into the connector and fully
  inserts into the SHV connector housing.
+ If the pin stops before the ground break insulator is fully inserted in
+ the tube do not force it further and risk breaking the filter.
+ There should be little enough gap that the insulator inserts part way in
+ the tube and it can be kept aligned with tape until the epoxy cures.
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -2250,6 +2372,7 @@ Optional:
 \shape default
  Use conductive epoxy to ensure good electrical connection between ground
  isolation resistor and tube.
+ Do not attempt to solder this connection, the printed parts will melt.
 \end_layout
 
 \begin_layout Enumerate
