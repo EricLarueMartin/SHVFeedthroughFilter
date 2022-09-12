@@ -182,14 +182,31 @@ End cap, printed part
 Jigs and other multi use components
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Itemize
 M2 bolt to use for attaching nuts to tube fill ports
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Itemize
+Tray for cleaning parts in IPA
+\end_layout
+
+\begin_layout Itemize
+Glass beaker for flux remover
+\end_layout
+
+\begin_layout Itemize
+Lab coat
+\end_layout
+
+\begin_layout Itemize
+Safety glasses
+\end_layout
+
+\begin_layout Itemize
 Guard ring positioning jig
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 M4 flat head bolt
 \end_layout
@@ -207,10 +224,12 @@ M4 flat head bolt
 M4 washer
 \end_layout
 
-\begin_layout Subsubsection
+\end_deeper
+\begin_layout Itemize
 Capacitor array jig
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Capacitor jig, machined from aluminum or stainless steel
 \end_layout
@@ -223,10 +242,12 @@ Capacitor jig, machined from aluminum or stainless steel
 Capacitor jig removal tool, printed part
 \end_layout
 
-\begin_layout Subsubsection
+\end_deeper
+\begin_layout Itemize
 Positioning jigs
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 2x Resistor positioning jig, printed part
 \end_layout
@@ -247,6 +268,7 @@ Short pin positioning jig, printed part.
 Long pin positioning jig, printed part.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection
 Consumables
 \end_layout
@@ -256,7 +278,15 @@ Isopropyl Alcohol (IPA)
 \end_layout
 
 \begin_layout Itemize
-Tray for cleaning parts in IPA
+413 B heavy duty flux remover
+\end_layout
+
+\begin_layout Itemize
+Syringe with 16 gauge blunt tip needle
+\end_layout
+
+\begin_layout Itemize
+Rubber gloves
 \end_layout
 
 \begin_layout Itemize
@@ -2003,22 +2033,95 @@ Remove the jig and solder the capacitors to the tube.
 Clean 
 \end_layout
 
+\begin_layout Standard
+Cleaning is easiest to perform before installing the connector and end cap,
+ but the filter can also eb cleaned after full assembly using the fill ports.
+\end_layout
+
+\begin_layout Standard
+To ensure that all the flux is removed and does not contribute to the discharges
+, it is recommended to clean the solder components, especially the pulser
+ board, with heavy duty flux remover.
+ The compound used was 413B-liquid heavy duty flux remover.
+ The liquid is highly flammable.
+ Gloves and glasses must be worn at all time while handling the liquid,
+ and care must be taken to not breathe in the fumes.
+ Use only a small amount of liquid at times.
+ The flux remover contains acetone and ethyl acetate, which can disolve
+ both PLA and PETG, thus one should try to not let the liquid touch the
+ 3D printed endcaps and ground break insulator if cleaning with these parts
+ are installed.
+ Incidental exposure will not rapidly damage the plastic if it is cleaned
+ up quickly.
+\end_layout
+
 \begin_layout Enumerate
-Clean the SHV connector and filter with internals thoroughly with IPA.
- There is no more soldering after this and this is the perfect time to make
- sure everything is clean.
- If the endcap is made of PETG acetone can be used, but it will damage PLA.
- Short exposure to acetone will be fine and may help remove solder flux.
+Check the syrine needle will fit through the M2 nut on the fill port.
+ A 16 gauge needle should barely fit.
+\end_layout
+
+\begin_layout Enumerate
+Pour a small amount of 413 B flux remover into the beaker.
  
+\end_layout
+
+\begin_layout Enumerate
+Draw the flux remover into the syringe.
+\end_layout
+
+\begin_layout Enumerate
+While holding the filter with the pulse board on the bottom, put some flux
+ remover into the filter using the small port holes.
+ 2 mL will ensure the capacitors are completely submerged in flux remover
+ if the end is already sealed.
+\end_layout
+
+\begin_layout Enumerate
+Swirl for a few seconds then drain the flux remover.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Repeat one more time to ensure all flux is removed.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Carefully pour the solution back into a beaker.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use a KimTech wipe to wipe down liquid around the filter 
+\end_layout
+
+\begin_layout Enumerate
+Let remaining liquid in the cup evaporate in a well ventilated area, ideally
+ under a fume hood or outside.
+\end_layout
+
+\begin_layout Enumerate
+Clean the entire filter thoroughly with IPA.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use an empty syringe to purge the filter several times with air.
+ This will help dry out remaining liquid.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let the filter dry overnight before applying high voltage, potting, or sealing
+ with epoxy..
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
