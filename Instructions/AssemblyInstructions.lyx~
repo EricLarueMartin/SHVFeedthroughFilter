@@ -1280,7 +1280,7 @@ Solder the end of the braid to the washer, make sure no stray wires go into
 \end_layout
 
 \begin_layout Standard
-Materials needed: 413 B-Liquid, glass beaker, syringe with needle tip, gloves,
+Materials needed: Acetone, glass beaker, syringe with needle tip, gloves,
  lab and glasses.
  
 \end_layout
@@ -1289,28 +1289,27 @@ Materials needed: 413 B-Liquid, glass beaker, syringe with needle tip, gloves,
 To ensure that all the flux is removed and does not contribute to the discharges
 , it is recommended to clean the solder components, especially the pulser
  board, with heavy duty flux removal.
- The compound used is 413 B-Liquid.
- The liquid contains acetone, which is highly flammable.
- Gloves and glasses must be worn at all time while handling the liquid,
- and cure must be maintained to not breathe in the liquid fumes.
- Use only small amount of liquid at times.
+ The compound used is Acetone, which is highly flammable.
+ Gloves and glasses must be worn at all time while handling Acetone, and
+ cure must be maintained to not breathe in the Acetone fumes.
+ Use only small amount of Acetone at times.
  Acetone can disolve plastic.
- Thus it is important to not let the liquid touch the 3D printed endcaps
- and end ground break insulator to the SHV pin.
+ Thus it is important to not let Acetone touch the 3D printed endcaps and
+ end ground break insulator to the SHV pin.
  
 \end_layout
 
 \begin_layout Enumerate
-Pour a small amount of 413 B-Liquid into the beaker.
+Pour a small amount of Acetone into the beaker.
  
 \end_layout
 
 \begin_layout Enumerate
-Draw the liquid into the syringe 
+Draw Acetone into the syringe 
 \end_layout
 
 \begin_layout Enumerate
-While holding the file with the pulse board on the bottom, put some liquid
+While holding the file with the pulse board on the bottom, put some Acetone
  into the filter using the small port holes 
 \end_layout
 
@@ -1325,17 +1324,17 @@ Repeat one more time to ensure all flux is removed.
 \end_layout
 
 \begin_layout Enumerate
-Carefully pour the solution back into a beaker.
+Carefully pour the Acetone/flux solution back into a beaker.
  
 \end_layout
 
 \begin_layout Enumerate
-Use a KimTech wipe to wipe down liquid around the filter 
+Use a KimTech wipe to wipe down Acetone around the filter 
 \end_layout
 
 \begin_layout Enumerate
 Use an empty syringe to purge the filter several times with air.
- This will help dry out remaining liquid.
+ This will helpd dry out remaining Acetone.
  
 \end_layout
 
@@ -1345,7 +1344,7 @@ Let the filter dry for atleast an hour.
 \end_layout
 
 \begin_layout Enumerate
-Let remaining liquid in the cup evaporate in a well ventilated area, idially
+Let over Acetone in the cup evaporate in a well ventilated area, idially
  the fume hood in room 163.
 \end_layout
 
