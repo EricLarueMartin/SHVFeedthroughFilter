@@ -1272,6 +1272,82 @@ Solder the end of the braid to the washer, make sure no stray wires go into
  This gap will be filled with epoxy.
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+\size large
+4.3 Clean solder with a heavy-duty flux remover
+\end_layout
+
+\begin_layout Standard
+Materials needed: Acetone, glass beaker, syringe with needle tip, gloves,
+ lab and glasses.
+ 
+\end_layout
+
+\begin_layout Standard
+To ensure that all the flux is removed and does not contribute to the discharges
+, it is recommended to clean the solder components, especially the pulser
+ board, with heavy duty flux removal.
+ The compound used is Acetone, which is highly flammable.
+ Gloves and glasses must be worn at all time while handling Acetone, and
+ cure must be maintained to not breathe in the Acetone fumes.
+ Use only small amount of Acetone at times.
+ Acetone can disolve plastic.
+ Thus it is important to not let Acetone touch the 3D printed endcaps and
+ end ground break insulator to the SHV pin.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Pour a small amount of Acetone into the beaker.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Draw Acetone into the syringe 
+\end_layout
+
+\begin_layout Enumerate
+While holding the file with the pulse board on the bottom, put some Acetone
+ into the filter using the small port holes 
+\end_layout
+
+\begin_layout Enumerate
+Swirl for a few seconds.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Repeat one more time to ensure all flux is removed.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Carefully pour the Acetone/flux solution back into a beaker.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Use a KimTech wipe to wipe down Acetone around the filter 
+\end_layout
+
+\begin_layout Enumerate
+Use an empty syringe to purge the filter several times with air.
+ This will helpd dry out remaining Acetone.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let the filter dry for atleast an hour.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let over Acetone in the cup evaporate in a well ventilated area, idially
+ the fume hood in room 163.
+\end_layout
+
 \begin_layout Section
 Sealing the cable connection
 \end_layout
