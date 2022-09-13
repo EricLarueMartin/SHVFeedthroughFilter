@@ -2354,35 +2354,7 @@ noprefix "false"
 
 \end_inset
 
-).
- If the pin position falls outside this range print a ground isolation electric
- break with a different length to adjust the pin position.
-\begin_inset Float figure
-wide false
-sideways false
-status open
 
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename MIL-STD-348B_CHG-3p89.pdf
-	width 90col%
-	BoundingBox 70bp 410bp 540bp 700bp
-	clip
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:MIL-STD-348B_CHG-3-page-89."
-
-\end_inset
-
-MIL-STD-348B_CHG-3 page 89.
- S = 4.78-5.28 mm, T = 1.55-1.98 mm.
 \end_layout
 
 \end_inset
