@@ -163,7 +163,7 @@ M4 brass standoff in 6 mm hex, 5-6 mm length
 \end_layout
 
 \begin_layout Itemize
-Pulser PCB
+Pulse PCB
 \end_layout
 
 \begin_layout Itemize
@@ -179,27 +179,11 @@ End cap, printed part
 \end_layout
 
 \begin_layout Subsection
-Jigs and other multi use components
+Jigs and other equipment
 \end_layout
 
 \begin_layout Itemize
 M2 bolt to use for attaching nuts to tube fill ports
-\end_layout
-
-\begin_layout Itemize
-Tray for cleaning parts in IPA
-\end_layout
-
-\begin_layout Itemize
-Glass beaker for flux remover
-\end_layout
-
-\begin_layout Itemize
-Lab coat
-\end_layout
-
-\begin_layout Itemize
-Safety glasses
 \end_layout
 
 \begin_layout Itemize
@@ -216,8 +200,19 @@ M4 flat head bolt
 \end_layout
 
 \begin_layout Itemize
-11/16 inch OD washer, Hillman 44142 will work but a stainless steel one
- would be better
+11/16 inch OD washer 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A Hillman 44142 copper washer used for the guard ring will work for the
+ jig as well, but a stainless steel washer would be better as it won't become
+ accidentally soldered to the tube by stray solder.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -269,6 +264,30 @@ Long pin positioning jig, printed part.
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Tray or other container for cleaning parts in IPA
+\end_layout
+
+\begin_layout Itemize
+Two glass beaker for flux remover, one for filling syringe and one for waste
+\end_layout
+
+\begin_layout Itemize
+Lab coat
+\end_layout
+
+\begin_layout Itemize
+Safety glasses
+\end_layout
+
+\begin_layout Itemize
+Ultrasonic cleaner
+\end_layout
+
+\begin_layout Itemize
+Vacuum degassing chamber
+\end_layout
+
 \begin_layout Subsection
 Consumables
 \end_layout
@@ -282,7 +301,11 @@ Isopropyl Alcohol (IPA)
 \end_layout
 
 \begin_layout Itemize
-Syringe with 16 gauge blunt tip needle
+Acid brush for applying flux remover
+\end_layout
+
+\begin_layout Itemize
+Syringes with 16 gauge blunt tip needles
 \end_layout
 
 \begin_layout Itemize
@@ -294,15 +317,15 @@ Epoxy, Loctite Hysol EA 0151
 \end_layout
 
 \begin_layout Itemize
-Electrical tape
-\end_layout
-
-\begin_layout Itemize
 ~1/8
 \begin_inset Quotes erd
 \end_inset
 
  wide Polymide tape
+\end_layout
+
+\begin_layout Itemize
+Electrical tape
 \end_layout
 
 \begin_layout Itemize
@@ -327,7 +350,7 @@ Solder flux
 \end_layout
 
 \begin_layout Itemize
-High temperature solder 
+High temperature solder
 \begin_inset Foot
 status open
 
@@ -372,6 +395,12 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Silicone rubber potting compound, Momentive RTV11 with supplied DBT catalyst
+ or alternative for deep section curing (RTV9811) or slow curing (RTV9910)
+ (optional) 
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -432,6 +461,10 @@ Tube jig used to measure the proper length of tube.
 
 \begin_layout Enumerate
 Use the jig to drill the smaller, 1/16 inch, holes in the tube.
+ Do not attempt to drill through to drill two holes at once and do not keep
+ using the same jig after the guide holes are worn, just print more jigs.
+ Poorly aligned holes will make later assembly far more difficult and a
+ few seconds spent here will save far more time later.
 \begin_inset Float figure
 placement H
 wide false
@@ -487,8 +520,8 @@ Rotate the tube 1/16 turn so two of the small holes line up with the seam
 
 , holes.
  This positioning of the holes allows cleaning fluid to flow through the
- filter and if bolts are used to seal an oil filled filter this keeps the
- ends of the bolts further from the capacitors.
+ filter between capacitors more easily and if bolts are used to seal an
+ oil filled filter this keeps the ends of the bolts further from the capacitors.
  
 \begin_inset Float figure
 placement H
@@ -570,15 +603,18 @@ Bottom: Large hole positions, drill bit inserted in hole shows position
 \end_layout
 
 \begin_layout Enumerate
-Bore out the inside of the tube on a lathe to fit the pulser PCB.
+Bore out the inside of the tube on a lathe to fit the pulse PCB.
  It should be bored 1 mm (0.039 inches) deep so the PCB protrudes slightly
  from the end of the tube.
  The end cap has a 0.4 mm high lip around the edge that will engage with
  the protruding PCB.
  Ensure the bored hole is wide enough the PCB easily slides in.
- The capacitors are very brittle and can easily get damaged if forcing the
- PCB into a tight fitting hole.
  
+\series bold
+The capacitors are very brittle and can easily get damaged if forcing the
+ PCB into a tight fitting hole.
+\series default
+
 \begin_inset Float figure
 placement H
 wide false
@@ -636,6 +672,7 @@ Test fitting the PCB in a bored out tube.
 \begin_layout Enumerate
 Deburr the inside of the tube with a rat-tail file or a flap wheel.
  If there are any burs the capacitors may catch later.
+ Finish with a fine file or sand paper and thoroughly clean.
 \end_layout
 
 \begin_layout Subsection
@@ -899,6 +936,12 @@ Brass nut soldered to tube using stainless steel bolt as aid.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Thoroughly remove all solder flux with heavy duty flux remover and an acid
+ brush.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1242,9 +1285,9 @@ Attach resistors to capacitor array
 \series bold
 Warning: Be careful handling the capacitor array after the first application
  of heat, it will remain hot for quite some time.
- Be carefuly handling the assembled capacitors and resistors, too much stress
- on the resistors can easily break the leads once attached with a zero length
- solder joint.
+ Be carefully handling the assembled capacitors and resistors, too much
+ stress on the resistors can easily break the leads once attached with a
+ zero length solder joint.
 \end_layout
 
 \begin_layout Enumerate
@@ -1328,6 +1371,10 @@ Optional:
  into the connector.
  The resistor epoxy should be sufficient to prevent discharges without this
  additional tape.
+ Do not do this if intending to pot the filter as it will restrict flow
+ and lead to air gaps that can cause discharges.
+ Experience has shown wasn't necessary in prototype testing, but the corner
+ of the SHV connector is a field concentration concern.
 \end_layout
 
 \begin_layout Enumerate
@@ -1505,24 +1552,29 @@ Removing capacitor array from jig using removal tool.
 \end_layout
 
 \begin_layout Enumerate
-Remove the nylon bolts and place the jig and bolts in IPA to remove solder
- flux.
+Remove the nylon bolts clean the jig and bolts with heavy duty flux remover
+ and IPA to remove solder flux.
  The bolts will start to stick in the jig if it is not cleaned after every
  use.
  
 \end_layout
 
 \begin_layout Enumerate
-Remove the Kapton tape and inspect the capacitors for any signs of damage
- under a microscope.
-\end_layout
-
-\begin_layout Section
-Assemble the pulser PCB 
+Remove the Kapton tape from the filter internals and thoroughly clean all
+ solder flux with heavy duty flux remover and an acid brush.
+ 
 \end_layout
 
 \begin_layout Enumerate
-Carefully solder three 470 pF and three 3.3 nF capacitors to the pulser PCB.
+Inspect for any signs of damage under a microscope.
+\end_layout
+
+\begin_layout Section
+Assemble the pulse PCB 
+\end_layout
+
+\begin_layout Enumerate
+Carefully solder three 470 pF and three 3.3 nF capacitors to the pulse PCB.
  Arrange the capacitors so they alternate values around the array.
  The capacitors shouldn't go over the hole in the center of the PCB, but
  can get arbitrarily close.
@@ -1576,7 +1628,7 @@ name "fig:CapacitorsOnPulserPCB"
 
 \end_inset
 
-Capacitors soldered to pule PCBs.
+Capacitors soldered to pulse PCBs.
  
 \end_layout
 
@@ -1591,7 +1643,17 @@ Capacitors soldered to pule PCBs.
 \end_layout
 
 \begin_layout Enumerate
-Cut an 8 inch section of pulse line.
+Clean off most of the solder flux with heavy duty flux remover but don't
+ worry about removing it thoroughly.
+ The PCB will need to be cleaned multiple times after this step but it is
+ easier to remove most of the flux at this step while it is easier to handle.
+ Pay particular attention to solder flux stuck under the capacitors, it
+ will be much easier to clean under capacitors at this step and further
+ steps won't apply flux directly to the area under capacitors.
+\end_layout
+
+\begin_layout Enumerate
+Cut an 20 cm section of pulse line.
  Trim the cable down to the center conductor for ~2 mm on both ends, one
  end attached to the PCB the other is going to be used for continuity checks.
  Trim back the jacket and braid ~ 2 mm more.
@@ -1644,7 +1706,7 @@ Trimmed cable with section of jacket removed from middle to expose shield,
 \end_layout
 
 \begin_layout Enumerate
-Trim down and solder a lead of a 51 Ω resistor to the pulser PCB.
+Trim down and solder a lead of a 51 Ω resistor to the pulse PCB.
  Solder the pulse line to a hole on the opposite end of the PCB.
 \end_layout
 
@@ -1690,7 +1752,7 @@ Trim the HV cable end so the conductor goes through the hole in the PCB
  resistor lead later.
  Feed the cable through the hole and spread the conductor strands out so
  they will solder bridge to the capacitors.
- Solder the HV cable to the pulser PCB with high temperature solder.
+ Solder the HV cable to the pulse PCB with high temperature solder.
 \begin_inset Float figure
 placement H
 wide false
@@ -1732,12 +1794,10 @@ Soldering HV cable to PCB.
 \end_layout
 
 \begin_layout Enumerate
-
-\shape italic
-Optional
-\shape default
-: Add a strip of Kapton tape around the capacitors to avoid shorting the
- capacitors to the side of the tube later.
+Clean off the solder flux again.
+ The PCB will have to be cleaned again later, but it will be far more difficult
+ as it will then be attached to the filter internal inside the tube and
+ sticking only 1 cm out the end of the tube.
 \end_layout
 
 \begin_layout Section
@@ -1757,6 +1817,10 @@ Solder the end a 1 MΩ resistor to the SHV connector body.
  isolation electric break and fit in a recess for the resistor.
  If the lead is too long it can be wrapped further around the SHV connector
  to take up slack, but if it's too short it needs to be removed and redone.
+\end_layout
+
+\begin_layout Enumerate
+Remove the solder flux with heavy duty flux remover and a brush.
 \begin_inset Float figure
 placement H
 wide false
@@ -1812,11 +1876,23 @@ Install the filter in the the tube
 \end_layout
 
 \begin_layout Enumerate
+Test insert the filter internals into the tube.
+ They should have a small gap to the sides to ensure a good solder connection
+ can be made, but slide in easily.
+ If the capacitors stick on any obstructions remove the obstructions with
+ a file or sand paper and clean the tube to remove resulting dust.
+ 
+\series bold
+The capacitors are very brittle, do not attempt to force them past an obstructio
+n.
+\end_layout
+
+\begin_layout Enumerate
 Use the short connector jig to position the pin 19.8 mm from the SHV connector
  end of the tube.
  The pin should protrude 1 mm from the end of the jig.
  This positions the pin 10 mm away from its final position and allows making
- a solder connection for the pulser PCB to the output resistor.
+ a solder connection for the pulse PCB to the output resistor.
 \begin_inset Float figure
 placement H
 wide false
@@ -1859,8 +1935,8 @@ Short pin position jig installed on tube with pin sticking 1 mm through
 \end_layout
 
 \begin_layout Enumerate
-Install the pulser PCB in the PCB assembly jig and attach to HV pigtail
- end of filter.
+Install the pulse PCB in the PCB assembly jig and attach to HV pigtail end
+ of filter.
  The jig positions the PCB about 9 mm from the end of the tube which should
  allow it to insert 1 mm into the recess on the end of the tube later.
 \end_layout
@@ -1870,7 +1946,7 @@ Check the position of the resistor for making the solder connection, then
  remove the jig and make a loop and add a solder ball to the end of the
  resistor.
  Position the loop so it can be soldered to the solder blob between the
- capacitors on the pulser PCB, which should be about in the middle of the
+ capacitors on the pulse PCB, which should be about in the middle of the
  capacitors.
 \end_layout
 
@@ -1881,10 +1957,12 @@ Optional:
 \shape default
  Add a layer of Kapton film around the output resistor as added protection
  against discharges to the guard ring.
+ Experience has shown this wasn't necessary in prototype testing but the
+ edge of the guard ring is a field concentration concern.
 \end_layout
 
 \begin_layout Enumerate
-Reassemble the jigs and solder the output resistor to the pulser PCB.
+Reassemble the jigs and solder the output resistor to the pulse PCB.
  Use a lower temperature solder to avoid melting the solder joints of the
  capacitors on the PCB.
  
@@ -1911,15 +1989,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Soldering the output resistor to the pulser PCB.
+Soldering the output resistor to the pulse PCB.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1929,14 +2003,43 @@ Soldering the output resistor to the pulser PCB.
 \end_layout
 
 \begin_layout Enumerate
-Remove the jigs and carefully slide the filter components into the tube.
+Thoroughly clean the pulse PCB and connecting components with heavy duty
+ flux remover.
+ This is the last cleaning before the filter is assembled and no more solder
+ is going to be used after this step.
+ 
+\series bold
+The most common problem with these filters has been discharges attributed
+ to residue left on the surface of the pulse PCB and coupling coupling capacitor
+s, be thorough.
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Recommended
+\shape default
+: Add a strip of Kapton tape around the capacitors to avoid shorting the
+ capacitors to the side of the tube later.
+ While not strictly necessary if the capacitors and PCB are well positioned
+ this will ensure no shorts are created by poor alignment.
+ A short that occurs from a shift while epoxy cures would be difficult to
+ fix and remove the ability to pulse through the filter.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Carefully slide the filter components into the tube.
  The capacitors need to be rotated to align with the holes in the sides
  of the tube.
  Use the longer pin jig to position the tip of the pin 29.8 mm from the end
  of the tube.
  The pin should protrude 1 mm through the hole in the jig.
- Tape the pulser PCB in place with electrical tape, this is to ensure the
- capacitors stay put as they are soldered to the tube.
+ Tape the pulse PCB in place to ensure the capacitors stay put as they are
+ soldered to the tube.
+ Kapton tape will be easier to remove later.
+ Vinyl electrical tape may be stretched to secure the PCB in position better,
+ but will melt when heated and leave a difficult to remove residue.
  Do not try to install the end cap at this time, it will melt when soldering
  the capacitors in place.
 \begin_inset Float figure
@@ -2005,7 +2108,7 @@ Bottom: PCB taped in place to mitigate shifting of capacitor array.
 \end_layout
 
 \begin_layout Enumerate
-Check continuity on the pulser line and ground resistor, it will be difficult
+Check continuity on the pulse line and ground resistor, it will be difficult
  to correct problems once the capacitors are soldered to the middle of the
  tube.
  The center conductor of the pulse line should measure 51 ohms to the resistor
@@ -2034,30 +2137,30 @@ Clean
 \end_layout
 
 \begin_layout Standard
-Cleaning is easiest to perform before installing the connector and end cap,
- but the filter can also eb cleaned after full assembly using the fill ports.
-\end_layout
-
-\begin_layout Standard
 To ensure that all the flux is removed and does not contribute to the discharges
-, it is recommended to clean the solder components, especially the pulser
+, it is recommended to clean the solder components, especially the pulse
  board, with heavy duty flux remover.
  The compound used was 413B-liquid heavy duty flux remover.
  The liquid is highly flammable.
  Gloves and glasses must be worn at all time while handling the liquid,
  and care must be taken to not breathe in the fumes.
  Use only a small amount of liquid at times.
- The flux remover contains acetone and ethyl acetate, which can disolve
+ The flux remover contains acetone and ethyl acetate, which can dissolve
  both PLA and PETG, thus one should try to not let the liquid touch the
- 3D printed endcaps and ground break insulator if cleaning with these parts
- are installed.
+ 3D printed end-caps and ground break insulator if cleaning with these parts
+ installed.
  Incidental exposure will not rapidly damage the plastic if it is cleaned
  up quickly.
+ Cleaning is easiest to perform before installing the connector and end
+ cap, but the filter can also be cleaned after full assembly using only
+ the fill ports.
+ This will make it more difficult to drain solvents, but is otherwise similar.
 \end_layout
 
 \begin_layout Enumerate
-Check the syrine needle will fit through the M2 nut on the fill port.
+Check the syringe needle will fit through the M2 nut on the fill port.
  A 16 gauge needle should barely fit.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -2066,54 +2169,48 @@ Pour a small amount of 413 B flux remover into the beaker.
 \end_layout
 
 \begin_layout Enumerate
-Draw the flux remover into the syringe.
+Draw flux remover into the syringe.
 \end_layout
 
 \begin_layout Enumerate
 While holding the filter with the pulse board on the bottom, put some flux
  remover into the filter using the small port holes.
- 2 mL will ensure the capacitors are completely submerged in flux remover
- if the end is already sealed.
+ 2 mL of liquid will fill the filter to about the mid way between the top
+ of the puler board capacitors and the fill port.
 \end_layout
 
 \begin_layout Enumerate
-Swirl for a few seconds then drain the flux remover.
+Swirl for a few seconds then drain the flux remover into a waste beaker.
  
 \end_layout
 
 \begin_layout Enumerate
-Repeat one more time to ensure all flux is removed.
+Repeat until all flux is removed as indicated by drained flux remover running
+ clear.
  
 \end_layout
 
 \begin_layout Enumerate
-Carefully pour the solution back into a beaker.
- 
+Wipe down liquid around the filter 
 \end_layout
 
 \begin_layout Enumerate
-Use a KimTech wipe to wipe down liquid around the filter 
+Leave the waste liquid to evaporate in a well ventilated area, ideally under
+ a fume hood or outside.
 \end_layout
 
 \begin_layout Enumerate
-Let remaining liquid in the cup evaporate in a well ventilated area, ideally
- under a fume hood or outside.
-\end_layout
-
-\begin_layout Enumerate
-Clean the entire filter thoroughly with IPA.
- 
+Clean the entire filter thoroughly by complete submersion in IPA.
 \end_layout
 
 \begin_layout Enumerate
 Use an empty syringe to purge the filter several times with air.
  This will help dry out remaining liquid.
- 
 \end_layout
 
 \begin_layout Enumerate
 Let the filter dry overnight before applying high voltage, potting, or sealing
- with epoxy..
+ with epoxy.
 \end_layout
 
 \begin_layout Standard
@@ -2245,7 +2342,7 @@ Test the electrical connections.
 \begin_deeper
 \begin_layout Enumerate
 Between pulse line center conductor and tube should be 51 ohms.
- This ensures the connection between pulse line to pulser PCB, pulser PCB
+ This ensures the connection between pulse line to pulse PCB, pulse PCB
  to 51 ohm resistor, and resistor to tube.
  
 \end_layout
@@ -2354,7 +2451,35 @@ noprefix "false"
 
 \end_inset
 
+).
+ If the pin position falls outside this range print a ground isolation electric
+ break with a different length to adjust the pin position.
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MIL-STD-348B_CHG-3p89.pdf
+	width 90col%
+	BoundingBox 70bp 410bp 540bp 700bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MIL-STD-348B_CHG-3-page-89."
+
+\end_inset
+
+MIL-STD-348B_CHG-3 page 89.
+ S = 4.78-5.28 mm, T = 1.55-1.98 mm.
 \end_layout
 
 \end_inset
@@ -2369,6 +2494,12 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Enumerate
+Apply epoxy.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 Apply epoxy to the SHV pin around the joint with the resistor.
  Make sure no epoxy gets on the contact area of the pin for mating with
  a socket connector.
@@ -2377,6 +2508,12 @@ Apply epoxy to the SHV pin around the joint with the resistor.
  Keep the pin, resistor, and capacitor assembly oriented pin up, until inserted
  into the connector, to prevent epoxy from flowing along the pin towards
  the contact portion.
+ 
+\shape italic
+If the filter will be filled completely with silicone rubber or never filled
+ with oil this step (but not the next step) may be skipped.
+ This is only to ensure the filter won't leak if filled with oil.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -2389,6 +2526,7 @@ Generously apply epoxy to the area between ground break insulator and connector.
  to be free of bubbles.
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 Insert the ground break insulator with SHV connector into the filter tube.
  The SHV pin needs to be centered so it slides into the connector and fully
@@ -2396,7 +2534,8 @@ Insert the ground break insulator with SHV connector into the filter tube.
  If the pin stops before the ground break insulator is fully inserted in
  the tube do not force it further and risk breaking the filter.
  There should be little enough gap that the insulator inserts part way in
- the tube and it can be kept aligned with tape until the epoxy cures.
+ the tube and it can be kept aligned with tape until the epoxy cures or
+ the filter is filled with silicone rubber.
  
 \begin_inset Float figure
 placement H
@@ -2452,34 +2591,65 @@ Optional:
 
 \begin_layout Enumerate
 Tape over the joint with electrical tape and keep the assembly oriented
- connector end down while the epoxy cures.
+ connector end down while the epoxy cures or until the filter is filled
+ with silicone rubber.
  Make sure the ground isolation resistor makes good contact with the tube
  when taping it down.
 \end_layout
 
 \begin_layout Section
-Finishing touches
+Potting
+\end_layout
+
+\begin_layout Standard
+Potting shouldn't be necessary, but many filters have had discharge problems
+ when filled with air mostly due to soldering residue on the pulse coupling
+ capacitors.
+ The solution that has proven most effective is to fill the filter with
+ silicone oil, however oil is not allowed at LNGS so filling with silicone
+ rubber can be done instead.
+ If silicone rubber will be used with a pulser PCB that has slots in it
+ then epoxying the endcap to the filter can be skipped as the silicone rubber
+ and tape will hold the filter together.
+ This will also allow air to escape as the filter is filled with silicone,
+ thus epoxying the end cap to the filter is not recommended if the filter
+ will be filled with silicone rubber.
+\end_layout
+
+\begin_layout Subsection
+Potting the endcap with epoxy
+\end_layout
+
+\begin_layout Standard
+If not filling the filter entirely with silicone rubber the endcap should
+ be epoxied.
+ If the pulse PCB has slots significant epoxy will flow through the slots
+ before it cures, if there are no slots there will be insignificant loss
+ of epoxy through the vias and gap between the pulse PCB and filter tube.
+ If the filter will be filled completely with silicone rubber and the pulse
+ PCB is slotted then it is recommended to only epoxy the edge of the pulse
+ PCB to the tube and endcap so the filter is held firmly together by a strong
+ and rigid epoxy bond while leaving the slots and hole in the endcap open
+ for air to escape while filling with potting compound.
+\end_layout
+
+\begin_layout Subsubsection
+Complete potting
 \end_layout
 
 \begin_layout Enumerate
-Install the BNC connector on the pulse line.
-\end_layout
-
-\begin_layout Enumerate
-Pot the HV pigtail connection to the pulser PCB by filling the end cap with
+Pot the HV pigtail connection to the pulse PCB by filling the end cap with
  degassed epoxy through the end cap fill port.
  Keep the filter oriented with the SHV connector end down while the epoxy
- cures.
+ cures if using a PCB without slots or seal the fill port and keep the filter
+ oriented connector end up so the epoxy doesn't drip into the filter instead
+ of curing in the endcap.
  This will also seal the tube so it can be filled with oil if desired.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2503,13 +2673,214 @@ Fill port for potting HV pigtail connection.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Structural epoxy only
+\end_layout
+
+\begin_layout Enumerate
+Generously apply epoxy to the outside edge of the pulse PCB.
+ There needs to be enough epoxy to firmly attach the pulse PCB, tube, and
+ endcap together and so long as the epoxy doesn't seal the slots in the
+ pulse PCB it won't interfere with air escape later.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Tape around the epoxied area to hold the filter together while the epoxy
+ cures.
+\end_layout
+
+\begin_layout Enumerate
+Keep the fitler oriented SHV connector end down while the epoxy cures.
+ If some epoxy drips into the filter as it cures it should end up on the
+ inner wall of the tube and not be a problem, if it drops into the endcap
+ and seals the hole air can't escape later during potting.
+\end_layout
+
+\begin_layout Subsection
+Filling with silicone oil
+\end_layout
+
+\begin_layout Enumerate
+Use an oring or cut a gasket for two M2 bolts.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Seal one fill port with an M2 bolt and gasket.
+\end_layout
+
+\begin_layout Enumerate
+Fill the filter completely with oil, covering the fill port and tilting
+ it to ensure oil flows into voids then adding more oil.
+\end_layout
+
+\begin_layout Enumerate
+Seal the second fill port with an M2 bolt and gasket.
+\end_layout
+
+\begin_layout Subsection
+Filling with silicone rubber
+\end_layout
+
+\begin_layout Subsubsection
+Partial fill
+\end_layout
+
+\begin_layout Standard
+The most common discharge problem occurs at the pulse coupling capacitors
+ as these are most difficult to clean.
+ Potting only the pulse coupling capacitors is usually effective and can
+ be done after the fitler is epoxied together without risk of adding problematic
+ air voids.
+ This procedure is based on the deaeration procedure specified in the RTV11
+ technical data sheet.
+\end_layout
+
+\begin_layout Enumerate
+Place a filter that has been epoxied together in a jig so it stands connector
+ end up.
+\end_layout
+
+\begin_layout Enumerate
+Mix RTV11 with the minimum amount of catalyst to maximize the working time
+ for degassing and minimizing voids.
+ For the DBT catalyst included with the RTV11 0.1% catalyst was used by adding
+ one drop to 20 grams of RTV11.
+\end_layout
+
+\begin_layout Enumerate
+Use a syringe and 16 gauge needle to inject 2 mL of potting compound through
+ the fill port by the pulse PCB end of the filter.
+ This will fill the filter to about half way between the fill port and the
+ top of the pulse coupling capacitors.
+\end_layout
+
+\begin_layout Enumerate
+Place the filter on jig in a vacuum degassing chamber along with any remaining
+ mixed potting compound in a separate open container so any frothing that
+ occurs can be observed in the remaining potting compound.
+\end_layout
+
+\begin_layout Enumerate
+Draw a vacuum of 33 mBar to degass the potting compound, leaving the compound
+ under vacuum for at least 2 minutes after frothing ceases.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Complete fill
+\end_layout
+
+\begin_layout Standard
+A complete fill is best performed on a filter where the endcap and pulse
+ PCB are attached to the filter with epoxy only around the edge of a slotted
+ pulse PCB, this allows air to easily escape while potting.
+\end_layout
+
+\begin_layout Enumerate
+Place a filter that has been epoxied together in a jig so it stands connector
+ end down.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Mix RTV11 with the minimum amount of catalyst to maximize the working time
+ for degassing and minimizing voids.
+ For the DBT catalyst included with the RTV11 0.1% catalyst was used by adding
+ one drop to 20 grams of RTV11.
+\end_layout
+
+\begin_layout Enumerate
+Use a syringe and 16 gauge needle to inject 3.5 mL of potting compound through
+ the fill port by the SHV connector end of the filter.
+ Do not draw more potting compund into the syringe than necessary as it
+ needs to be left in the mixing container to be degassed.
+\end_layout
+
+\begin_layout Enumerate
+Place the filter on jig in a vacuum degassing chamber along with any remaining
+ mixed potting compound so any frothing that occurs can be observed in the
+ remaining potting compound.
+\end_layout
+
+\begin_layout Enumerate
+Draw a vacuum of 33 mBar to degass the potting compound, leaving the compound
+ under vacuum for at least 2 minutes after frothing ceases.
+ There is an air void in the SHV connector between the input resistor and
+ connector body, this step is also to fill this void.
+\end_layout
+
+\begin_layout Enumerate
+Filling the rest of the filter depends on if air can escape out the end
+ cap.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If the pulse PCB is slotted and air can escape out the end cap then fill
+ the filter the rest of the way through the SHV connector end fill port
+ until potting compound comes to the top of the hole in the end cap.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Seal the fill port by the end cap with an M2 bolt and leave the port near
+ the SHV connector open.
+\end_layout
+
+\begin_layout Enumerate
+Seal the fill port with an M2 nut and keep the filter oriented connector
+ end down as the potting compound cures.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If the endcap is sealed and air can only escape out the fill port.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Fill with an additional 10 mL of compound, this puts the level of the potting
+ compound at about the guard ring and ensures the void between the resistor
+ and SHV connector is filled while continuing to fill the filter.
+\end_layout
+
+\begin_layout Enumerate
+Seal the fill port by the SHV connector with an M2 bolt and tilt the fitler
+ on it's side so the end cap side fill port is up.
+ Continue to fill through the end cap end fill port to the maximum extend
+ possible.
+ Keep adding more potting compound as it settles and the air void shifts
+ to the side with the fill port.
+\end_layout
+
+\begin_layout Enumerate
+Seal the fill port and tilt the filter so the SHV connector end is elevated
+ at a 30 degree angle with the connector end fill port down.
+ There is a slot in the guard ring on the fill port side and this will keep
+ an air void remaining from easily moving past the guard ring.
+ Any air voids along the tube wall by the guard ring will be in a region
+ of minimal electric field.
+ Any air void on the SHV connector side of the guard ring will move to the
+ space between the SHV connector body and the tube, which is another region
+ of low electric field.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Finishing touches
+\end_layout
+
+\begin_layout Enumerate
+Install the BNC connector on the pulse line.
 \end_layout
 
 \begin_layout Enumerate
@@ -2540,7 +2911,7 @@ Solder the ground wire with connector to the HV pigtail connector end of
 \begin_layout Enumerate
 Label the filter and record any details.
  Is there Kapton tape around the input resistor? How about a film around
- the output resistor? Is it potted? What was the HV pigtail serial number?
+ the output resistor? Is it potted? 
 \end_layout
 
 \end_body
